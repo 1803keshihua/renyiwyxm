@@ -41,6 +41,7 @@ li{
   padding-top: 40px;
    z-index: 30;
   top: 0;
+  position: relative;
   .j-navbar-nav{
     padding-left:360px;
   }
@@ -63,7 +64,6 @@ li{
     color: #cc1a2a;
   }
 }
-@media screen and (min-width: 768px){
 .my-j-jumbotron{
   padding-top: 0;
   padding-bottom: 0;
@@ -85,33 +85,28 @@ li{
       }
       .ring{
        position: relative;
-        padding-left: 430px;
+        padding-left: 400px;
         .j-ring{
           float: left;
-          margin-left: 40px;
+          margin-left: 50px;
           width: 183px;
           height: 183px;
           border: 1px solid white;
           border-radius:50%;
           margin-top: 140px;
           position: relative;
+          z-index:100;
           .j-hover{
             width: 231px;
             height: 231px;
             top: -24px;
-            left: 50;
-            opacity: 0.4;
+            left: -24px;
+            opacity: 0.1;
             position: absolute;
-            //z-index:-1;
-            background: red;
-
-
-
-
+            background: white;
+            border-radius:50%;
+            z-index: -2;
           }
-
-
-
         }
         .j-key{
           font-size: 30px;
@@ -119,23 +114,115 @@ li{
           display: block;
           text-align: center;
           line-height: 1.6;
-
         }
         .j-number{
           font-size: 20px;
         }
       }
 
-
-
     }
   }
-
-
-
-
 }
+
+/****************正文开始*****************/
+.j-body{
+  height: 768px;
+  background:url("../image/studio/body.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  top:600px;
+  .j-body-header{
+    border: 1px solid red;
+     .j-image{
+       float: left;
+       display: block;
+       width: 210px;
+       height: 270px;
+       left: 0;
+       top: 30px;
+       border: 1px solid;
+       overflow: hidden;
+       margin-left: 10px;
+       background: white;
+       position: relative;
+       background-size: cover;
+     .j-img{
+        padding-top: 30px;
+       width: 140px;
+       height: 140px;
+       position: absolute;
+       left: 30px;
+      }
+
+       #j-first-image{
+         background: url("../image/studio/bd000.jpg") no-repeat center center;
+         width:100%;
+         height:180px;
+         background-size: cover;
+         position: relative;
+         z-index: 1000;
+       }
+       #j-second-image{
+         background: url("../image/studio/bd001.jpg") no-repeat center center;
+         width:100%;
+         height:180px;
+         background-size: cover;
+         position: relative;
+         z-index: 1000;
+       }
+       #j-third-image{
+         background: url("../image/studio/bd002.jpg") no-repeat center center;
+         width:100%;
+         height:180px;
+         background-size: cover;
+         position: relative;
+         z-index: 1000;
+       }
+       #j-fourth-image{
+         background: url("../image/studio/bd003.jpg") no-repeat center center;
+         width:100%;
+         height:180px;
+         background-size: cover;
+         position: relative;
+         z-index: 1000;
+
+       }
+       #j-fifth-image{
+         background: url("../image/studio/bd004.jpg") no-repeat center center;
+         width:100%;
+         height:180px;
+         background-size: cover;
+         position: relative;
+         z-index: 1000;
+       }
+       .j-title{
+         font-size: 20px;
+         padding-top: 15px;
+       }
+       .j-text{
+         position: relative;
+         overflow: hidden;
+         z-index: 100;
+       }
+       .j-rgb{
+         width: 100%;
+         height: 100%;
+         background-color: rgba(200,23,38,.8);
+         position:absolute;
+         bottom: 0;
+         display: none;
+       }
+     }
+  }
+  i{
+      display: block;
+      width: 27px;
+      height: 5px;
+      background-color: #ca1c0d;
+      margin: 15px auto 30px;
+  }
 }
+
 
 
 
