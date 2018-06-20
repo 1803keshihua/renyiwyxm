@@ -230,8 +230,10 @@ body {
   -o-animation-delay: 2.5s;
   animation-delay: 2.5s;
   display: inline-block;
+  text-decoration: none;
 }
-#bannert .banner1 .b1_btn:hover {
+#bannert .banner1 .b1_btn:hover,
+#bannert .banner1 .b1_btn:visited {
   text-decoration: none;
 }
 #bannert .banner2 {
