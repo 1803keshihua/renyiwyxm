@@ -52,8 +52,9 @@
     function moverBanner(){
         index++;
         $(".bannerPart").eq(index).show().siblings().hide();
-        if(index==3){
-            index=0;
+        console.log(index)
+        if(index==2){
+            index=-1;
         }
     }
 

@@ -231,6 +231,9 @@ body {
   animation-delay: 2.5s;
   display: inline-block;
 }
+#bannert .banner1 .b1_btn:hover {
+  text-decoration: none;
+}
 #bannert .banner2 {
   background: url(http://www.renyilink.com/themeResource/theme4/images/13.png) no-repeat;
   background-size: 100% 100%;
@@ -726,7 +729,7 @@ body {
   -moz-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .RyEdu_Eight_Btn a:hover {
   background: #32eb90;
@@ -815,6 +818,7 @@ body {
   -o-transition: all 0.5s;
 }
 .RyEdu_NineWrap .RyEdu_Nine .RyEdu_Nine_Teacher .RyEdu_Nine_Teacher_main a:hover {
+  text-decoration: none;
   background: #32eb90;
   color: white;
 }
