@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+.j-nav-popup{
+  background: #cc1a2a;
+  width:100%;
+  line-height: 50px;
+    ul{
+      margin-left: 200px;
+      padding-top: 100px;
+
+      a{
+        text-decoration: none;
+        color: white;
+        position: relative;
+        i{
+          display: block;
+          position: absolute;
+          top:5px;
+          left:0;
+        }
+      }
+
+    }
+
+}
+.nav-popup-bg{
+    background:#151515;
+     width: 100%;
+     position: absolute;
+     bottom:0; left:0;
+     z-index: 10;
+}
+.j-nav{
+  background: none;
+  border: none;
+  padding-top: 40px;
+   z-index: 30;
+  top: 0;
+  .j-navbar-nav{
+    padding-left:360px;
+  }
+  li{
+     padding-left: 10px;
+     font-size: 14px;
+  }
+   .nav-icon {
+    position: absolute;
+    right:160px;
+     top:48px;
+    width: 30px;
+    cursor: pointer;
+     display: block;
+     span:hover{
+       color: #cc1a2a;
+     }
+  }
+  .navbar-collapse ul li a:hover{
+    color: #cc1a2a;
+  }
+}
+@media screen and (min-width: 768px){
+.my-j-jumbotron{
+  padding-top: 0;
+  padding-bottom: 0;
+  position: fixed;
+  top:0;
+  z-index: -100;
+  .j-best{
+    position: relative;
+    .carousel-caption{
+      width: 1100px;
+      height: 480px;
+      background: url("../image/studio/do_the_best (1).png") left 50% no-repeat;
+      position: absolute;
+      left: 0;
+      h2{
+        position: absolute;
+        left:0;
+        top:20px;
+      }
+      .ring{
+       position: relative;
+        padding-left: 430px;
+        .ring-one,.ring-two,.ring-three{
+          float: left;
+          margin-left: 40px;
+          width: 183px;
+          height: 183px;
+          border: 1px solid white;
+          border-radius:50%;
+          margin-top: 140px;
+
+        }
+        .j-key{
+          font-size: 30px;
+          margin-top: 55px;
+          display: block;
+          text-align: center;
+          line-height: 1.6;
+
+        }
+        .j-number{
+          font-size: 20px;
+        }
+      }
+
+
+
+    }
+  }
+
+
+
+
+}
+}
+
+
+
