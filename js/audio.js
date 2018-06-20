@@ -41,19 +41,14 @@
                 });
 
         })
-    })
-
+    });
        fn();
-
    });
       function fn() {
           $(".j-image").hover(function () {
                   $(this).find(".j-rgb").fadeIn("slow");
                   $(this).find(".j-title").css("color","white");
                   $(this).find(".j-brand").css("color","#bfbabb")
-
-
-
               },function(){
                   $(this).find(".j-rgb").fadeOut("slow");
                   $(this).find(".j-title").css("color","black");
@@ -62,8 +57,34 @@
               }
           );
       }
+      $(".j-three-body li").each(function (i) {
 
 
+          $(this).mouseenter(function () {
+              var img=$("<img src='../image/studio/icon_advantage_0" + (i+1) + ".png'/>")
+
+              $(this).find("div").replaceWith(img);
+
+                 // $(this).find("img").stop().animate({"width":"68px","height":"68px","left":"300px","bottom":"-90px"},1000)
+          } );
+
+          $(this).mouseleave(function () {
+              $(this).find("img").css("display","none")
+          })
+
+
+      });
+
+   $("#msg-11").focus(function () {
+       $(this).text("");
+       $(this).blur(function () {
+           if($(this).text()==""){
+               $(this).text("想说点什么呢？")
+
+           }
+       })
+
+   });
 
 
 
