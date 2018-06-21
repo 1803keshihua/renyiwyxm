@@ -20,6 +20,7 @@
         </array>
       </option>
       <option name="outputFromStdout" value="true" />
+      <option name="program" value="D:/bootstrap/node_modules/.bin/lessc.cmd" />
 <<<<<<< HEAD
       <option name="program" value="D:/轮播图/node_modules/.bin/lessc.cmd" />
 =======
