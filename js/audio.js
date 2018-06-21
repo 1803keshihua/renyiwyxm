@@ -86,6 +86,15 @@
 
    });
 
+  $(".about ul li").each(function (i) {
+      $(this).mouseenter(function () {
+          $(this).css("background","url('../image/studio/0-"+i+".jpg') no-repeat center center", "backgroundSize", "cover");
+
+          $(this).mouseleave(function () {
+              $(this).css("background","url('../image/studio/"+i+".jpg') no-repeat center center", "backgroundSize", "cover");
+          })
+      })
+  });
 
 
 
