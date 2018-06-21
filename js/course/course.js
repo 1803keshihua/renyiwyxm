@@ -77,6 +77,17 @@
     $(".rightArrow").click(moverBanner);
 })();
 
+/**************用户体验设计***************/
+(function(){
+    $(".RyEdu_one_main_left").mouseenter(function(){
+            $(this).css("transform"," rotateX(360deg)");
+    })
+
+    $(".RyEdu_one_main_left").mouseleave(function(){
+        $(this).css("transform"," rotateX(0deg)");
+    })
+})();
+
 /**************课程培训体系***************/
 (function(){
     $(".uiTab").mouseenter(function(){
@@ -175,3 +186,28 @@
     })
 })();
 
+//返回顶部
+(function(){
+    $(window).scroll(function(){
+        var top=$(this).scrollTop();
+        if(top>1000){
+            $("#returnHead").show();
+        } else{
+            $("#returnHead").hide();
+        }
+    })
+    $("#returnHead").click(function(){
+        var timer;
+        timer=setInterval(fnMove,10);
+        function fnMove(){
+            var top= $(window).scrollTop();
+            top-=50;
+            $(window).scrollTop(top);
+            if(top<0){
+                clearInterval(timer);
+            }
+        }
+
+
+    })
+})()

@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/tsx/course.css">
     <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/tsx/iconfont.css">
 </head>
 <body>
     <!--导航开始-->
@@ -162,7 +163,7 @@
             <h1 class="RyEdu_one_title" style="padding-top:30px;">用户体验设计</h1>
             <h3 class="RyEdu_one_titleSmall">这是一个培训过剩但价值紧缺的时代，不只为提供培训，更期望提供“思想”的能力。以“创意、设计、实践”为核心，力求有含量、有价值、有灵魂。</h3>
             <div class="RyEdu_one_main">
-                <div class="RyEdu_one_main_left">
+                <div class="RyEdu_one_main_left animate" id="my1RyEdu_one_main_left">
                     <img src="http://www.renyilink.com/themeResource/theme4/images/RyEdu_one_Icon1.png" class="img1" />
                     <p class="RyEdu_one_main_p1">行业人才需求高达100万</p>
                     <p class="RyEdu_one_main_p2">现在所有互联网公司、IT公司都需要UI设计师。像谷歌、Facebook、三星、百度、腾讯、阿里巴巴等知名企业，对UI设计师的需求更是巨大。目前行业人才需求高达100万。</p>
@@ -172,7 +173,7 @@
                     <p class="RyEdu_one_main_p1">100%高薪就业率</p>
                     <p class="RyEdu_one_main_p2">任意GET所有学员无缝对接任意JOB，突破层层面试，顺利拿到风口互联网公司的offer！百度、网易、京东……</p>
                 </div>
-                <div class="RyEdu_one_main_left">
+                <div class="RyEdu_one_main_left animate" id="my2RyEdu_one_main_left">
                     <img src="http://www.renyilink.com/themeResource/theme4/images/RyEdu_one_Icon3.png" class="img1" />
                     <p class="RyEdu_one_main_p1">收入无上限，¥20000，只是平均薪</p>
                     <p class="RyEdu_one_main_p2">任意GET近期学员就业平均月薪8000+<br />应届毕业生8-12K<br />初级UI设计师12-15K<br />中级UI设计师20K+<br />高级UI设计师30K+</p>
@@ -1128,16 +1129,18 @@
         <div class="Newfooter_bottom">Copyright&nbsp;©&nbsp;2015&nbsp;&nbsp;renyilink.com京ICP备15062383号<br />renyilink.com&nbsp;保留所有版权&nbsp;使用这些服务遵守用户协议。</div>
     </div>
     <!--foot部分结束-->
+
+    <!--返回头部开始-->
+    <div id="returnHead" style="display:none">
+        <i class="iconfont icon-xiangshangjiantou" ></i>
+    </div>
+    <!--返回头部结束-->
 <script type="text/javascript" src="../bootstrap/js/jquery.js"></script>
 <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../js/course/course.js" ></script>
 </body>
 </html>
 <script>
-    // function fnName(){
-    //     $("#clientUserInfoNameInput").val("");
-    // }
-
     function funName(){
         if($("#clientUserInfoNameInput").val()==""){
             alert("姓名不能为空！");
@@ -1152,10 +1155,6 @@
             }
         }
     }
-
-    /*function fnTel(){
-        $("#clientUserInfoTelNumInput").val("");
-    }*/
 
     function funTel(){
         if($("#clientUserInfoTelNumInput").val()==""){
