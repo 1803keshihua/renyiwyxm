@@ -47,12 +47,11 @@
     var timer;
     var index=$(".bannerPart").index();
 
-    timer=setInterval(moverBanner,4000);
+    timer=setInterval(moverBanner,5000);
 
     function moverBanner(){
         index++;
         $(".bannerPart").eq(index).show().siblings().hide();
-        console.log(index)
         if(index==2){
             index=-1;
         }
@@ -65,7 +64,7 @@
 
     $("#bannert").mouseout(function(){
         $(".arrowBody").hide();
-        timer=setInterval(moverBanner,4000);
+        timer=setInterval(moverBanner,5000);
     })
 
     $(".leftArrow").click(function(){
@@ -130,38 +129,6 @@
         count++;
     },2000)
 })();
-
-//提交用户信息
-function submitUserInfo(obj){
-    var name = $("#clientUserInfoNameInput").val() ;
-    var telNum = $("#clientUserInfoTelNumInput").val() ;
-    var reg_1 = /^(0|86|17951)?(13[0-9]|17[0-9]|15[012356789]|18[0-9]|14[57])[0-9]{8}$/;
-
-    if( name.replace(/\s+/g,"") == "" || name.replace(/\s+/g,"") == "听说你有个好名字"){
-        alert('姓名不能为空');
-        return false ;
-    }
-    if(!reg_1.test(telNum)){
-        alert('手机号格式不正确');
-        return false ;
-    }
-    $(obj).text("提交中...").attr('disabled' , 'disabled');
-    $.post("/renyi/addClientUserInfo" ,
-        {"name" : name ,
-            "telNum" :telNum },
-        function(data){
-            $(obj).text("小确幸").removeAttr('disabled' );
-            if(data.error){
-                alert(data.error);
-            }else {
-                alert("提交成功!");
-                $("#clientUserInfoNameInput").val("听说你有个好名字") ;
-                $("#clientUserInfoTelNumInput").val("你的电话号码") ;
-            }
-        },
-        "json"
-    );
-}
 
 //倒计时
 (function(){
