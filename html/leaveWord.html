@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>留言部分</title>
+    <!--meta:vp  移动端需要视口-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--设置当前最优浏览器兼容-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <!---->
+    <!--[if lte IE 6]>
+    <!--响应式和h5新标记，低版本ie浏览器能识别-->
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <script src="../bootstrap/js/html5shiv.min.js"></script>
+    <script src="../bootstrap/js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background: #d0d0d0;
+        }
+        .form-group {
+            margin-bottom: 6px;
+        }
+        #con{
+            width: 360px;
+            margin: 40px auto;
+            background: #ededed;
+        }
+        #head{
+            height: 40px;
+            background: #00aef3;
+        }
+        #head p{
+            font-size:16px;
+            line-height: 40px;
+            height:40px;
+            color:#ffffff;
+            padding-left: 10px;
+        }
+        #mainer{
+            width: 300px;
+            margin:20px auto;
+        }
+        #mainer textarea{
+            width: 100%;
+            height: 70px;
+        }
+        #useName,#tel,#eMail,#place{
+            margin: 6px 0;
+        }
+        #imgA {
+            background: #fff url(http://sgoutong.baidu.com/webim/1528361123/asset/message/css/img/user.png) no-repeat center;
+        }
+        .myL1{
+            display: inline;
+            float: left;
+            padding: 0;
+            width: 10%;
+            height: 30px;
+            white-space: nowrap;
+            text-align: center;
+            border: 1px solid #3c763d;
+            border-right:none;
+        }
+        .form-control{
+            width: 90%;
+            height: 30px;
+            border-radius:unset;
+            border-left:none;
+        }
+        .mytTex{
+            border:1px solid #3c763d;
+            margin-bottom: 3px;
+        }
+        .form-control-feedback {
+            top: 0 !important;
+        }
+        #imgB {
+            background: #fff url(http://sgoutong.baidu.com/webim/1528361123/asset/message/css/img/phone.png) no-repeat center;
+        }
+        #imgC {
+            background: #fff url(http://sgoutong.baidu.com/webim/1528361123/asset/message/css/img/mail.png) no-repeat center;
+        }
+        #imgD {
+            background: #fff url(http://sgoutong.baidu.com/webim/1528361123/asset/message/css/img/location.png) no-repeat center;
+        }
+        .myBtn{
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            background: #00aef3;
+            padding: 0 0;
+            border-radius:2px;
+        }
+        .myBtn:hover,.myBtn:active,.myBtn:visited{
+            background: #00aef3;
+        }
+        #footer{
+            height: 12px;
+            padding: 25px 0;
+            background: url(http://sgoutong.baidu.com/webim/1528361123/asset/message/css/img/brand.png) no-repeat center;
+        }
+    </style>
+</head>
+<body>
+    <div id="con">
+        <div id="head">
+            <p>请您留言</p>
+        </div>
+        <form action="course.html" id="mainer" onsubmit="return fnALL()">
+            <textarea class="form-control mytTex" placeholder="请在此输入留言内容，我们会尽快与您联系。(必填)" onblur="funTex1()" id="tex"></textarea>
+            <span id="promptA"></span>
+            <div id="useName">
+                <div class="form-group has-success has-feedback">
+                    <label class="control-label myL1" for="inputSuccess1" id="imgA"></label>
+                    <input type="text" class="form-control" id="inputSuccess1" aria-describedby="inputSuccess1Status" placeholder="姓名">
+                    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true" id="provingA" style="display:none"></span>
+                </div>
+            </div>
+            <div id="tel">
+                <div class="form-group has-success has-feedback">
+                    <label class="control-label myL1" for="inputSuccess2" id="imgB"></label>
+                    <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status" placeholder="电话（必填）" onblur="funTex2()">
+                    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true" id="provingB" style="display:none"></span>
+                </div>
+            </div>
+            <span id="promptB"></span>
+            <div id="eMail">
+                <div class="form-group has-success has-feedback">
+                    <label class="control-label myL1" for="inputSuccess3" id="imgC"></label>
+                    <input type="text" class="form-control" id="inputSuccess3" aria-describedby="inputSuccess2Status" placeholder="邮箱">
+                    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true" id="provingC" style="display:none"></span>
+                </div>
+            </div>
+            <div id="place">
+                <div class="form-group has-success has-feedback">
+                    <label class="control-label myL1" for="inputSuccess4" id="imgD"></label>
+                    <input type="text" class="form-control" id="inputSuccess4" aria-describedby="inputSuccess2Status" placeholder="地址">
+                    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true" id="provingD" style="display:none"></span>
+                </div>
+            </div>
+            <input class="btn btn-default myBtn" type="submit" value="发送" id="myBtn">
+        </form>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
+<script src="../bootstrap/js/jquery.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script>
+    function funTex1(){
+        if($("#tex").val()==""){
+            return false;
+        }else {
+            return true;
+        }
+    }
+    function funTex2(){
+        if($("#inputSuccess2").val()==""){
+            return false;
+        } else {
+            var res=/^13(5|7|8)\d{8}$/;
+            if(res.test($("#inputSuccess2").val())){
+                $("#provingB").show().addClass("glyphicon-ok").removeClass("glyphicon-remove");
+                return true;
+            } else{
+                $("#provingB").show().removeClass("glyphicon-ok").addClass("glyphicon-remove");
+                return false;
+            }
+        }
+    }
+    function fnALL(){
+        if($(".mytTex").val()==""){
+            $("#promptA").text("留言内容不能为空").css("color","red");
+            $(".mytTex").css("border","1px solid red")
+        }
+        if($("#inputSuccess2").val()==""){
+            $("#promptB").text("电话号码内容不能为空").css("color","red");
+            $("#inputSuccess2").css({"border":"1px solid red","border-left":"none"});
+            $("#imgB").css({"border":"1px solid red","border-right":"none"});
+        }
+        var res1=funTex1();
+        var res2=funTex2();
+
+        return res1&&res2;
+    }
+</script>
