@@ -11,7 +11,7 @@ $(window).scroll(function(){
 
 });
 $('.adBtn').click(function () {
-    $(this).find('img').attr('src','../img/news_adedIcon1.png');
+    $(this).find('img').attr('src','../image/cmc/news_adedIcon1.png');
     $(this).find('span').text('638');
 })
 // 导航栏 结束

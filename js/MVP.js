@@ -86,7 +86,7 @@ e.preventDefault();
     $(div).css({
         width:'100%',
         height:'100%',
-        background:'rgba(0,0,0,0.5) url("../img/detail'+index+'.png") no-repeat center',
+        background:'rgba(0,0,0,0.5) url("../image/cmc/detail'+index+'.png") no-repeat center',
         position:'absolute',
         top:0,
         left:0,
