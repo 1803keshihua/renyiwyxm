@@ -1,0 +1,1504 @@
+body {
+  font-family: "微软雅黑", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: initial;
+  color: #999999;
+  background-color: #ffffff;
+}
+a {
+  color: #d90f3a;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover,
+a:focus {
+  color: #333333;
+}
+a:focus {
+  outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 500;
+  color: #333333;
+}
+::selection {
+  color: #fff;
+  background: #d90f3a;
+}
+::-moz-selection {
+  color: #fff;
+  background: #d90f3a;
+}
+.btn-default {
+  color: #000;
+  background-color: transparent;
+  border-color: #ccc;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.btn-default:active:focus,
+.open .dropdown-toggle.btn-default,
+.btn-default:active:hover {
+  color: #fff;
+  background-color: #d90f3a;
+  border-color: #d90f3a;
+  outline: none;
+  box-shadow: none;
+}
+.btn-default.active:hover {
+  color: #000;
+  background-color: transparent;
+  border-color: #ccc;
+}
+div[data-target] {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+div[data-target] > div {
+  text-align: center;
+  position: relative;
+}
+div#apps_home {
+  position: relative;
+  width: 100%;
+  float: left;
+  height: 100%;
+}
+div#apps_features {
+  width: 100%;
+  float: left;
+}
+div#apps_portfolio {
+  width: 100%;
+  float: left;
+}
+div#apps_services {
+  width: 100%;
+  float: left;
+}
+div#apps_price_tabel {
+  width: 100%;
+  float: left;
+}
+div#apps_contact {
+  width: 100%;
+  float: left;
+}
+.apps_slider_bg img {
+  width: 100%;
+}
+.apps_slider {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  background: url(../image/main_bg.png);
+}
+.apps_slider .slider_in_tab_bg {
+  position: relative;
+}
+.apps_slider .slider_in_tab_bg img {
+  width: 100%;
+}
+.apps_slider .slider_in_tab_bg .slider_in_tab {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  height: 100%;
+  margin-top: 20px;
+}
+.apps_slider .slider_in_tab_bg .slider_in_tab .carousel {
+  border: 6px solid #3f3f3f;
+  border-radius: 5px;
+}
+.apps_slider .apps_logo {
+  padding-top: 40%;
+}
+.apps_slider .apps_logo .slider_logo {
+  display: inline-block;
+  padding: 5px 0px;
+  color: #fff;
+  font-size: 60px;
+  font-family: "微软雅黑", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  line-height: 80px;
+}
+.apps_slider .apps_logo .slider_logo span {
+  color: red;
+}
+.apps_slider .apps_logo p {
+  padding-left: 60px;
+  color: #fff;
+  padding-top: 16px;
+  font-size: 20px;
+  text-align: left;
+}
+.apps_slider .apps_logo a.btn.active {
+  color: #ffffff;
+  background-color: #d90f3a;
+  border-color: #d90f3a;
+  outline: none;
+  box-shadow: none;
+}
+.apps_slider .apps_logo a.btn {
+  margin-top: 20px;
+  color: #fff;
+  margin-left: 20px;
+  position: relative;
+}
+.apps_slider .apps_logo a.btn img {
+  width: 150px;
+  height: 150px;
+}
+.apps_slider .apps_logo a:nth-child(3) img {
+  right: 0;
+}
+.apps_slider .apps_logo a:last-child img {
+  left: 0;
+}
+.apps_header {
+  width: 100%;
+  float: left;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.apps_header .logo a {
+  padding: 5px 0;
+  color: #000;
+  font-size: 40px;
+  font-family: "微软雅黑", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+.apps_header .apps_menu_toggle {
+  background: #d90f3a;
+  padding: 10px 20px !important;
+  text-align: left;
+  margin-bottom: 10px !important;
+  color: #fff;
+  display: none;
+  cursor: pointer;
+}
+.apps_header .apps_menu_toggle i {
+  float: right;
+  padding: 3px 0 !important;
+}
+.apps_header .apps_menu {
+  width: 100%;
+  float: right;
+}
+.apps_header .apps_menu ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  float: right;
+}
+.apps_header .apps_menu ul li {
+  display: inline-block;
+  position: relative;
+}
+.apps_header .apps_menu ul li a {
+  display: inline-block;
+  padding: 20px 15px;
+  position: relative;
+  font-size: 18px;
+  color: #333333;
+  text-decoration: none;
+  cursor: pointer;
+}
+.apps_header .apps_menu ul li a:after {
+  position: absolute;
+  content: "*";
+  top: 38%;
+  font-size: 18px;
+  color: #d90f3a;
+  right: -4px;
+  box-sizing: border-box;
+}
+.apps_header .apps_menu ul li.active a {
+  color: #999999;
+}
+.fixed_menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999999;
+}
+.apps_divider {
+  width: 100%;
+  float: left;
+  text-align: center;
+  height: 1px;
+  background-color: #e7e7e7;
+  margin: 30px auto;
+}
+.apps_divider span {
+  font-size: 30px;
+  line-height: 30px;
+  background: #FFF;
+  margin-top: -9px;
+  padding: 0px 10px;
+  display: inline-block;
+}
+#apps_features .apps_page_title {
+  text-align: center;
+  margin-top: 90px;
+}
+#apps_features .apps_page_title p {
+  font-size: 18px;
+  color: #999999;
+  font-weight: 400;
+}
+#apps_features .apps_page_title h1 {
+  margin-top: 18px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #333333;
+}
+#apps_features .apps_template_feature {
+  width: 100%;
+  margin-top: 50px;
+  min-height: 600px;
+}
+#apps_features .apps_template_feature .apps_template_feature_tab {
+  width: 50%;
+  float: left;
+}
+#apps_features .apps_template_feature .apps_template_feature_tab ul {
+  list-style: none;
+  text-align: right;
+  padding: 55px;
+  margin-bottom: 10px;
+  position: relative;
+}
+#apps_features .apps_template_feature .apps_template_feature_tab ul li {
+  margin-bottom: 40px;
+  padding-left: 10%;
+  border-right: 1px solid rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition: all 0.3s;
+}
+#apps_features .apps_template_feature .apps_template_feature_tab ul li a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+#apps_features .apps_template_feature .apps_template_feature_tab ul li a span {
+  font-size: 45px;
+}
+#apps_features .apps_template_feature .apps_template_feature_tab ul li a span:hover {
+  color: #666666;
+}
+#apps_features .apps_template_feature .apps_template_feature_tab ul li a p {
+  font-size: 20px;
+  font-weight: 800;
+  color: #333333;
+  margin: 0 0 10px;
+}
+#apps_features .apps_template_feature .apps_template_feature_tab ul li a p:last-child {
+  color: #999999;
+  font-size: 15px;
+  font-weight: 500;
+}
+#apps_features .apps_template_feature .apps_template_feature_tab ul li.active:after {
+  position: absolute;
+  content: "*";
+  top: 0;
+  right: 0;
+  color: #d90f3a;
+  text-align: center;
+  line-height: 200px;
+  font-size: 30px;
+  border-right: 1px solid #E0E0E0;
+  height: 100%;
+  width: 7px;
+}
+#apps_features .apps_template_feature .apps_template_feature_tab ul li.active {
+  padding-right: 50px;
+}
+#apps_features .apps_template_feature .apps_template_feature_tab_content {
+  width: 50%;
+  float: left;
+}
+#apps_features .apps_template_feature .apps_template_feature_tab_content .apps_iphone {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+#apps_features .apps_template_feature .apps_template_feature_tab_content .apps_iphone img.back {
+  float: left;
+  margin-top: 55px;
+  width: 48%;
+  vertical-align: middle;
+}
+#apps_features .apps_template_feature .apps_template_feature_tab_content .apps_iphone img.top {
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 57%;
+  vertical-align: middle;
+}
+#apps_features .apps_ipad_tab {
+  width: 100%;
+  float: left;
+  padding-top: 40px;
+  position: relative;
+  margin-bottom: 75px;
+}
+#apps_features .apps_ipad_tab img.top {
+  position: absolute;
+  top: 105px;
+  left: 10%;
+  max-width: 100%;
+}
+#apps_features .apps_ipad_tab img.back {
+  float: left;
+  margin-top: -5px;
+  max-width: 100%;
+  z-index: 99;
+  position: relative;
+}
+#apps_features .apps_ipad_tab_detail {
+  width: 100%;
+  float: left;
+  margin-top: 50px;
+  margin-bottom: 75px;
+}
+#apps_features .apps_ipad_tab_detail h3 {
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0;
+  font-weight: 400;
+  margin-bottom: 10px;
+  padding-top: 45px;
+}
+#apps_features .apps_ipad_tab_detail p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0 0 10px;
+  color: #999999;
+}
+#apps_features .apps_parallax {
+  width: 100%;
+  float: left;
+  background: url("../image/parallax1.jpg");
+  background-size: cover;
+}
+#apps_features .apps_parallax .apps_parallax_bg {
+  background: url("../image/main_bg.png");
+}
+#apps_features .apps_parallax .apps_parallax_bg .slider_in_tab_bg2 {
+  width: 100%;
+  float: left;
+  margin: 80px 0px;
+  position: relative;
+}
+#apps_features .apps_parallax .apps_parallax_bg .slider_in_tab_bg2 img {
+  width: 100%;
+}
+#apps_features .apps_parallax .apps_parallax_bg .slider_in_tab_bg2 .slider_in_tab2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 25px 51px;
+}
+#apps_features .apps_parallax .apps_parallax_bg .slider_in_tab_bg2 .slider_in_tab2 .carousel {
+  width: 100%;
+}
+#apps_features .apps_parallax .apps_parallax_bg .slider_in_tab_bg2 .slider_in_tab2 .carousel .carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+#apps_features .apps_parallax .apps_parallax_bg .slider_in_tab_bg2 .slider_in_tab2 .carousel .carousel-inner .item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  line-height: 1;
+}
+#apps_features .apps_parallax .apps_parallax_bg .apps_feature_list {
+  width: 100%;
+  float: left;
+  padding: 130px 100px;
+}
+#apps_features .apps_parallax .apps_parallax_bg .apps_feature_list .carousel-indicators {
+  position: relative;
+  width: 100%;
+  left: 0;
+  top: 15px;
+  margin: 0;
+  padding-left: 0;
+  text-align: center;
+  z-index: 15;
+}
+#apps_features .apps_parallax .apps_parallax_bg .apps_feature_list .carousel-indicators a {
+  cursor: pointer;
+  color: #d90f3a;
+  text-decoration: none;
+}
+#apps_features .apps_parallax .apps_parallax_bg .apps_feature_list .carousel-indicators a .apps_feature_list_item:hover {
+  background: linear-gradient(to right, rgba(79, 79, 79, 0.55) 0%, rgba(0, 0, 0, 0) 100%);
+  -webkit-transition: all 0.3s;
+}
+#apps_features .apps_parallax .apps_parallax_bg .apps_feature_list .carousel-indicators a .apps_feature_list_item:hover .icon {
+  background-color: red;
+}
+#apps_features .apps_parallax .apps_parallax_bg .apps_feature_list .carousel-indicators a .apps_feature_list_item:hover .icon img {
+  border-top-color: white;
+}
+#apps_features .apps_parallax .apps_parallax_bg .apps_feature_list .carousel-indicators a .apps_feature_list_item:hover .detail h4 {
+  color: red;
+}
+#apps_features .apps_parallax .apps_parallax_bg .apps_feature_list .carousel-indicators a .apps_feature_list_item {
+  width: 100%;
+  float: left;
+  border-bottom: 1px solid #333333;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 100%);
+  -webkit-transition: all 0.3s;
+}
+#apps_features .apps_parallax .apps_parallax_bg .apps_feature_list .carousel-indicators a .apps_feature_list_item .icon {
+  float: left;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  opacity: 0.5;
+  -webkit-transition: all 0.3s;
+}
+#apps_features .apps_parallax .apps_parallax_bg .apps_feature_list .carousel-indicators a .apps_feature_list_item .detail {
+  text-align: left;
+  padding-left: 30px;
+  float: left;
+}
+#apps_features .apps_parallax .apps_parallax_bg .apps_feature_list .carousel-indicators a .apps_feature_list_item .detail h4 {
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  font-size: 16px;
+  line-height: 70px;
+  margin: 0;
+}
+#apps_portfolio .container .apps_page_title {
+  text-align: center;
+  margin-top: 90px;
+}
+#apps_portfolio .container .apps_page_title p {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 0px;
+  color: #999999;
+  font-weight: 400;
+}
+#apps_portfolio .container .apps_page_title h1 {
+  margin-top: 18px;
+  font-size: 30px;
+  font-weight: bold;
+}
+#apps_portfolio .apps_portfolio_main .container {
+  text-align: center;
+}
+#apps_portfolio .apps_portfolio_main .container ul {
+  list-style: none;
+  padding-left: 0px;
+  margin-bottom: 50px;
+  margin-left: -30px;
+}
+#apps_portfolio .apps_portfolio_main .container ul li {
+  display: inline-block;
+}
+#apps_portfolio .apps_portfolio_main .container ul li a {
+  display: inline-block;
+  padding: 20px 15px;
+  position: relative;
+  font-size: 18px;
+  color: #333333;
+  text-decoration: none;
+}
+#apps_portfolio .apps_portfolio_main .container ul li a:after {
+  position: absolute;
+  content: "*";
+  top: 38%;
+  font-size: 18px;
+  color: #d90f3a;
+  right: -4px;
+}
+#apps_portfolio .apps_portfolio_main .portfolio-grid {
+  width: 100%;
+  float: left;
+  text-align: center;
+  margin: 0px !important;
+}
+#apps_portfolio .apps_portfolio_main .portfolio-grid .portfolio-item {
+  width: 20%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: -1px;
+}
+#apps_portfolio .apps_portfolio_main .portfolio-grid .portfolio-item img {
+  width: 100%;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  background: #fff;
+}
+#apps_portfolio .apps_three_mob .apps-pulldown-40 {
+  margin-top: 40px;
+}
+#apps_portfolio .apps_three_mob .apps-pulldown-40 .apps_ipad_tab_detail {
+  width: 100%;
+  float: left;
+  margin-top: 50px;
+  margin-bottom: 75px;
+}
+#apps_portfolio .apps_three_mob .apps-pulldown-40 .apps_ipad_tab_detail h3 {
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0;
+  font-weight: 400;
+  margin-bottom: 10px;
+  padding-top: 45px;
+}
+#apps_portfolio .apps_three_mob .apps-pulldown-40 .apps_ipad_tab_detail p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #999999;
+}
+#apps_portfolio .apps_three_mob .apps-pulldown-40 .apps_ipad_tab_detail a {
+  margin-top: 30px;
+  position: relative;
+  color: white;
+  background-color: #985f0d;
+}
+#apps_portfolio .apps_three_mob .apps-pulldown-40 .apps_ipad_tab_detail a img {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  display: none;
+}
+#apps_portfolio .apps_three_mob .apps-pulldown-40 .apps_ipad_tab_detail a:hover {
+  background-color: transparent;
+  color: #666666;
+}
+#apps_portfolio .apps_three_mob .apps-pulldown-40 .apps_ipad_tab_detail a:hover img {
+  display: block;
+}
+#apps_portfolio .apps_three_mob .apps-pulldown-40 .apps_ipad_tab {
+  width: 100%;
+  float: left;
+  padding-top: 40px;
+  position: relative;
+  margin-bottom: 75px;
+}
+#apps_portfolio .apps_three_mob .apps-pulldown-40 .apps_ipad_tab img.one {
+  float: left;
+  margin-top: 55px;
+  width: 40%;
+  z-index: 99;
+  position: relative;
+}
+#apps_portfolio .apps_three_mob .apps-pulldown-40 .apps_ipad_tab img.two {
+  position: absolute;
+  top: 50px;
+  left: 25%;
+  width: 46%;
+  z-index: 999;
+}
+#apps_portfolio .apps_three_mob .apps-pulldown-40 .apps_ipad_tab img.three {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  width: 40%;
+}
+#grid .mix {
+  opacity: 0;
+  display: none;
+}
+#grid .mix img {
+  width: 100%;
+}
+#apps_services .container {
+  text-align: center;
+}
+#apps_services .container .apps_page_title {
+  text-align: center;
+  margin-top: 90px;
+}
+#apps_services .container .apps_page_title p {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 0px;
+  color: #999999;
+  font-weight: 400;
+}
+#apps_services .container .apps_page_title h1 {
+  margin-top: 18px;
+  font-size: 30px;
+  font-weight: bold;
+}
+#apps_services .container > p {
+  color: #666666;
+  font-size: 16px;
+}
+#apps_services .container .apps-pulldown-40 {
+  margin-top: 40px;
+}
+#apps_services .container .apps-pulldown-40 .apps_services {
+  width: 100%;
+  float: left;
+  margin: 30px 0px;
+}
+#apps_services .container .apps-pulldown-40 .apps_services .icon {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  color: #cccccc;
+  border: 1px solid #cccccc;
+  border-radius: 50%;
+  margin: 20px 0px;
+  font-size: 50px;
+  text-align: center;
+  display: inline-block;
+  -webkit-transition: all 0.5s;
+  position: relative;
+}
+#apps_services .container .apps-pulldown-40 .apps_services .icon img {
+  display: block;
+  width: 100%;
+}
+#apps_services .container .apps-pulldown-40 .apps_services .apps_divider {
+  margin-bottom: 20px;
+}
+#apps_services .container .apps-pulldown-40 .apps_services .apps_divider span {
+  opacity: 0;
+}
+#apps_services .container .apps-pulldown-40 .apps_services > a {
+  text-decoration: none;
+  margin-bottom: 100px;
+  color: #d90f3a;
+}
+#apps_services .container .apps-pulldown-40 .apps_services > a h4 {
+  font-size: 20px;
+}
+#apps_services .container .apps-pulldown-40 .apps_services > p {
+  margin-top: 20px;
+  color: #666666;
+  font-size: 16px;
+}
+#apps_services .container .apps-pulldown-40 .apps_services:hover .icon {
+  border-color: #d90f3a;
+  color: #d90f3a;
+}
+#apps_services .container .apps-pulldown-40 .apps_services:hover .apps_divider span {
+  opacity: 1;
+}
+#apps_services .container .apps-pulldown-40 .apps_services:hover .icon:after {
+  position: absolute;
+  content: "*";
+  top: -40px;
+  left: 38px;
+  font-size: 50px;
+  width: 20px;
+  height: 53px;
+  text-align: center;
+  background: #fff;
+  color: #d90f3a;
+  -webkit-transition: all 0.5s;
+}
+#apps_services .container .apps-pulldown-30 {
+  margin-top: 30px;
+}
+#apps_services .container .apps-pulldown-30 .apps_services_horizontal {
+  width: 100%;
+  float: left;
+  margin: 30px 0px;
+  text-align: left;
+}
+#apps_services .container .apps-pulldown-30 .apps_services_horizontal .icon {
+  width: 70px;
+  height: 70px;
+  float: left;
+  display: inline-block;
+  line-height: 70px;
+  color: #cccccc;
+  border: 1px solid #cccccc;
+  border-radius: 50%;
+  margin: 20px 40px 20px 0px;
+  font-size: 40px;
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  position: relative;
+}
+#apps_services .container .apps-pulldown-30 .apps_services_horizontal .icon:before {
+  position: absolute;
+  top: 0;
+  left: 82px;
+  content: "";
+  color: #d90f3a;
+  width: 6px;
+  height: 100%;
+  font-size: 25px;
+  padding-top: 5px;
+  border-right: 1px solid #e7e7e7;
+}
+#apps_services .container .apps-pulldown-30 .apps_services_horizontal a {
+  color: #d90f3a;
+  text-decoration: none;
+  cursor: pointer;
+}
+#apps_services .container .apps-pulldown-30 .apps_services_horizontal a h4 {
+  font-size: 18px;
+  margin-top: 20px;
+}
+#apps_services .container .apps-pulldown-30 .apps_services_horizontal p {
+  color: #666666;
+  font-size: 14px;
+  margin-top: 10px;
+}
+#apps_services .container .apps-pulldown-30 .apps_services_horizontal:hover .icon:after {
+  position: absolute;
+  content: "*";
+  top: -30px;
+  left: 24px;
+  font-size: 30px;
+  width: 20px;
+  height: 34px;
+  text-align: center;
+  background: #fff;
+  color: #d90f3a;
+  -webkit-transition: all 0.5s;
+}
+#apps_services .container .apps-pulldown-30 .apps_services_horizontal:hover .icon {
+  border: 1px solid #d90f3a;
+}
+#apps_services .container .apps-pulldown-30 .apps_services_horizontal:hover .icon:before {
+  content: "*";
+}
+#apps_services .apps_parallax_testimonials {
+  width: 100%;
+  float: left;
+  background: url("../image/parallax2.jpg");
+  background-size: cover;
+}
+#apps_services .apps_parallax_testimonials .apps_parallax_testimonials_bg {
+  background: url("../image/main_bg.png");
+}
+#apps_services .apps_parallax_testimonials .apps_parallax_testimonials_bg .owl-carousel {
+  margin: 60px 0px;
+  position: relative;
+  width: 100%;
+}
+#apps_services .apps_parallax_testimonials .apps_parallax_testimonials_bg .owl-carousel .owl-wrapper-outer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+#apps_services .apps_parallax_testimonials .apps_parallax_testimonials_bg .owl-carousel .owl-wrapper-outer .owl-item {
+  width: 540px;
+  text-align: center;
+}
+#apps_services .apps_parallax_testimonials .apps_parallax_testimonials_bg .owl-carousel .owl-wrapper-outer .owl-item .item {
+  text-align: center;
+}
+#apps_services .apps_parallax_testimonials .apps_parallax_testimonials_bg .owl-carousel .owl-wrapper-outer .owl-item .item h1 {
+  color: #FFFFFF;
+  font-size: 36px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-family: "微软雅黑", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+#apps_services .apps_parallax_testimonials .apps_parallax_testimonials_bg .owl-carousel .owl-wrapper-outer .owl-item .item .apps_divider {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, #b7b7b7 41%, rgba(0, 0, 0, 0) 42%, rgba(0, 0, 0, 0) 50%, rgba(231, 231, 231, 0) 51%);
+}
+#apps_services .apps_parallax_testimonials .apps_parallax_testimonials_bg .owl-carousel .owl-wrapper-outer .owl-item .item .apps_divider span {
+  color: #d90f3a;
+  font-size: 30px;
+  line-height: 30px;
+  margin-top: -9px;
+  padding: 0 10px;
+  display: inline-block;
+  background-color: transparent;
+}
+#apps_services .apps_parallax_testimonials .apps_parallax_testimonials_bg .owl-carousel .owl-wrapper-outer .owl-item .item p {
+  font-family: "微软雅黑", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 20px;
+  line-height: initial;
+  color: white;
+}
+#apps_services .apps_parallax_testimonials .apps_parallax_testimonials_bg .owl-carousel .owl-wrapper-outer .owl-item .item p:nth-child(3) {
+  font-size: 16px;
+  color: #666666;
+}
+#apps_price_tabel .container {
+  text-align: center;
+}
+#apps_price_tabel .container .apps_page_title {
+  text-align: center;
+  margin-top: 90px;
+}
+#apps_price_tabel .container .apps_page_title p {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 0px;
+  color: #999999;
+  font-weight: 400;
+}
+#apps_price_tabel .container .apps_page_title h1 {
+  margin-top: 18px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #333333;
+  font-family: "微软雅黑", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+#apps_price_tabel .container > p {
+  color: #999999;
+  font-size: 14px;
+}
+#apps_price_tabel .container .row .apps_price_table {
+  width: 100%;
+  float: left;
+  margin: 50px 0px;
+  margin-top: 80px;
+  text-align: center;
+  display: inline-block;
+}
+#apps_price_tabel .container .row .apps_price_table .apps_table {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  border: 1px solid #cccccc;
+}
+#apps_price_tabel .container .row .apps_price_table .apps_table .table_head {
+  padding: 20px 0;
+}
+#apps_price_tabel .container .row .apps_price_table .apps_table .table_head h3 {
+  color: #d90f3a;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 24px;
+  margin-top: 20px;
+  font-family: "微软雅黑", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+#apps_price_tabel .container .row .apps_price_table .apps_table .table_head p {
+  font-size: 16px;
+  color: #999999;
+}
+#apps_price_tabel .container .row .apps_price_table .apps_table .price_offer {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  position: relative;
+  border-top: 1px solid #ccc;
+  padding-top: 0;
+  text-align: center;
+}
+#apps_price_tabel .container .row .apps_price_table .apps_table .price_offer li {
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0px;
+  color: #999999;
+  font-family: "微软雅黑", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+#apps_price_tabel .container .row .apps_price_table .apps_table .apps_price {
+  background: #000;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+}
+#apps_price_tabel .container .row .apps_price_table .apps_table > a {
+  width: 100%;
+  padding: 20px 0px;
+  border: none;
+  background: #d90f3a;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 0 0 10px 10px;
+}
+#apps_price_tabel .container .row .apps_price_table .apps_table a.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+}
+.Newfooter {
+  width: 100%;
+  overflow: hidden;
+  clear: both;
+}
+.Newfooter .Newfooter_top {
+  width: 100%;
+  overflow: hidden;
+  clear: both;
+  background: #00243c;
+  padding: 20px 0;
+}
+.Newfooter .Newfooter_top .Newfooter_top_main {
+  width: 1100px;
+  overflow: hidden;
+  clear: both;
+  margin: 0 auto;
+}
+.Newfooter .Newfooter_top .Newfooter_top_main .Newfooter_top_main_left {
+  float: left;
+}
+.Newfooter .Newfooter_top .Newfooter_top_main .Newfooter_top_main_left .Newfooter_top_main_left_title {
+  overflow: hidden;
+  clear: both;
+  margin-bottom: 20px;
+  font-family: "微软雅黑", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #999999;
+}
+.Newfooter .Newfooter_top .Newfooter_top_main .Newfooter_top_main_left .Newfooter_top_main_left_title span {
+  display: inline-block;
+  border-bottom: 1px solid #00a0e8;
+  font-size: 16px;
+  color: #999999;
+  line-height: 28px;
+}
+.Newfooter .Newfooter_top .Newfooter_top_main .Newfooter_top_main_left .Newfooter_top_main_left_nr {
+  overflow: hidden;
+  clear: both;
+}
+.Newfooter .Newfooter_top .Newfooter_top_main .Newfooter_top_main_left .Newfooter_top_main_left_nr a {
+  display: block;
+  float: left;
+  width: 150px;
+  font-size: 12px;
+  color: #fff;
+  line-height: 24px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.Newfooter .Newfooter_top .Newfooter_top_main .Newfooter_top_main_center {
+  float: left;
+  padding-left: 50px;
+}
+.Newfooter .Newfooter_top .Newfooter_top_main .Newfooter_top_main_center .Newfooter_top_main_left_title {
+  overflow: hidden;
+  clear: both;
+  margin-bottom: 20px;
+}
+.Newfooter .Newfooter_top .Newfooter_top_main .Newfooter_top_main_center .Newfooter_top_main_left_title span {
+  display: inline-block;
+  border-bottom: 1px solid #00a0e8;
+  font-size: 16px;
+  color: #999999;
+  line-height: 28px;
+}
+.Newfooter .Newfooter_top .Newfooter_top_main .Newfooter_top_main_center .Newfooter_top_main_center_p1 {
+  line-height: 24px;
+  width: 420px;
+  font-size: 12px;
+  color: #FFF;
+  vertical-align: middle;
+}
+.Newfooter .Newfooter_top .Newfooter_top_main .Newfooter_top_main_right {
+  float: left;
+}
+.Newfooter .Newfooter_top .Newfooter_top_main .Newfooter_top_main_right .Newfooter_top_main_left_title {
+  overflow: hidden;
+  clear: both;
+  margin-bottom: 20px;
+}
+.Newfooter .Newfooter_top .Newfooter_top_main .Newfooter_top_main_right .Newfooter_top_main_left_title span {
+  display: inline-block;
+  border-bottom: 1px solid #00a0e8;
+  font-size: 16px;
+  color: #999999;
+  line-height: 28px;
+}
+.Newfooter .Newfooter_top .Newfooter_top_main .Newfooter_top_main_right .Newfooter_top_main_center_p1 {
+  line-height: 24px;
+  font-size: 12px;
+  color: #FFF;
+  vertical-align: middle;
+}
+.Newfooter .Newfooter_top .Newfooter_top_main .Newfooter_top_main_right .Newfooter_top_main_center_p1 img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.Newfooter .Newfooter_top .Newfooter_top_main .Newfooter_top_main_right .Newfooter_top_main_center_p1 a {
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.Newfooter .Newfooter_top .Newfooter_top_share {
+  width: 1100px;
+  height: 14px;
+  clear: both;
+  position: relative;
+  padding-top: 14px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.Newfooter .Newfooter_top .Newfooter_top_share .Newfooter_top_share_line {
+  width: 1100px;
+  overflow: hidden;
+  clear: both;
+  margin: 0 auto;
+  height: 1px;
+  background: #011D30;
+}
+.Newfooter .Newfooter_top .Newfooter_top_share .Newfooter_top_share_nr {
+  width: 240px;
+  height: 28px;
+  clear: both;
+  position: absolute;
+  left: 50%;
+  margin-left: -120px;
+  top: 0;
+  text-align: center;
+  background: #00243c;
+}
+.Newfooter .Newfooter_top .Newfooter_top_share .Newfooter_top_share_nr a {
+  display: inline-block;
+  width: 28px;
+  height: 26px;
+  background: #00a0e8;
+  border-radius: 28px;
+  transition: all 0.4s ease-in-out 0s;
+  margin: 0 5px;
+  padding-top: 2px;
+  position: relative;
+}
+.Newfooter .Newfooter_top .Newfooter_top_share .Newfooter_top_share_nr a img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+  transition: all 0.4s ease-in-out 0s;
+}
+.Newfooter .Newfooter_top .Newfooter_top_share .Newfooter_top_share_nr a.a1 img.imgEwm {
+  width: 100px;
+  height: 100px;
+  display: none;
+  position: absolute;
+  left: -35px;
+  top: -105px;
+}
+.Newfooter .Newfooter_top .Newfooter_top_share .Newfooter_top_share_nr a:hover {
+  background: #da4571;
+}
+.Newfooter .Newfooter_top .Newfooter_top_share .Newfooter_top_share_nr a:hover img {
+  transform: rotate(360deg);
+}
+.Newfooter .Newfooter_top .Newfooter_top_share .Newfooter_top_share_nr a.a1:hover img.imgEwm {
+  display: block;
+}
+.Newfooter .Newfooter_bottom {
+  width: 100%;
+  overflow: hidden;
+  clear: both;
+  background: #000F18;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  line-height: 24px;
+  padding: 20px 0;
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .apps_template_feature_tab ul li {
+    padding-left: 0px !important;
+  }
+  .apps_template_feature_tab ul li.active {
+    padding-right: 30px;
+  }
+  .apps_template_feature_tab ul li {
+    padding-left: 0px;
+  }
+  .apps_feature_list {
+    padding: 100px 10px;
+  }
+  .slider_in_tab2 {
+    padding: 20px 40px;
+  }
+  .portfolio-grid .portfolio-item {
+    width: 25%;
+  }
+  .apps_slider .apps_logo {
+    padding-top: 10%;
+  }
+  #apps_services .apps_parallax_testimonials .apps_parallax_testimonials_bg .owl-carousel .owl-wrapper-outer .owl-item {
+    width: 440px !important;
+  }
+}
+@media (min-width: 980px) and (max-width: 992px) {
+  .apps_template_feature_tab ul {
+    padding: 0px;
+  }
+  .apps_template_feature_tab ul li.active {
+    padding-right: 30px;
+  }
+  .apps_template_feature_tab ul li {
+    padding-left: 0px;
+  }
+  .apps_feature_list {
+    padding: 40px 10px;
+  }
+  .slider_in_tab2 {
+    padding: 15px 30px;
+  }
+  .portfolio-grid .portfolio-item {
+    width: 25%;
+  }
+  .apps_ipad_tab_detail {
+    margin-top: 30px;
+  }
+  .apps_slider .apps_logo {
+    padding-top: 20%;
+  }
+  #apps_services .apps_parallax_testimonials .apps_parallax_testimonials_bg .owl-carousel .owl-wrapper-outer .owl-item {
+    width: 330px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .apps_template_feature_tab ul {
+    padding: 0px;
+  }
+  .apps_template_feature_tab ul li.active {
+    padding-right: 30px;
+  }
+  .apps_template_feature_tab ul li {
+    padding-left: 0px;
+  }
+  .apps_iphone img.back {
+    margin-top: 30px;
+    width: 57%;
+    margin-bottom: 30px;
+  }
+  .apps_header .apps_menu ul {
+    float: none;
+    text-align: center;
+  }
+  #apps_features .apps_parallax .apps_parallax_bg .apps_feature_list {
+    padding: 40px 10px;
+  }
+  .slider_in_tab2 {
+    padding: 15px 30px;
+  }
+  #apps_portfolio .apps_portfolio_main .portfolio-grid .portfolio-item {
+    width: 33.33333333333333333333%;
+  }
+  .apps_ipad_tab_detail {
+    margin-top: 30px;
+  }
+  .logo {
+    text-align: center;
+  }
+  .apps_slider {
+    padding-top: 5%;
+  }
+  .apps_slider .apps_logo {
+    padding-top: 1%;
+  }
+  .apps_slider .apps_logo a.btn > img {
+    width: 90px;
+    height: 90px;
+  }
+  #apps_services .apps_parallax_testimonials .apps_parallax_testimonials_bg .owl-carousel .owl-wrapper-outer .owl-item {
+    width: 330px !important;
+  }
+}
+@media (max-width: 767px) {
+  .apps_header .apps_menu_toggle {
+    display: block;
+  }
+  .apps_page_title {
+    margin-top: 150px;
+  }
+  .apps_header .apps_menu ul li {
+    width: 100%;
+  }
+  .apps_header .apps_menu ul li a {
+    width: 100%;
+    padding: 10px 15px;
+  }
+  .apps_header .apps_menu ul li a:after {
+    content: "*";
+    top: 25%;
+    left: 0;
+    font-size: 23px;
+  }
+  .apps_header .apps_menu ul li:last-child a:after {
+    content: "*";
+    left: 0;
+  }
+  #apps_features .apps_template_feature .apps_template_feature_tab {
+    width: 100%;
+  }
+  #apps_features .apps_template_feature .apps_template_feature_tab_content {
+    width: 100%;
+  }
+  #apps_features .apps_template_feature .apps_template_feature_tab ul {
+    padding: 0px;
+  }
+  #apps_features .apps_template_feature .apps_template_feature_tab ul li {
+    padding-left: 0px;
+    border: 1px solid transparent;
+  }
+  #apps_features .apps_template_feature .apps_template_feature_tab ul li.active {
+    border: 1px solid rgba(217, 15, 58, 0.56);
+    position: relative;
+    padding-right: 0;
+  }
+  .apps_slider_bg > img {
+    width: auto;
+  }
+  .apps_template_feature_tab ul li {
+    padding-left: 0px;
+  }
+  .apps_iphone img.back {
+    margin-bottom: 30px;
+  }
+  .apps_ipad_tab_detail {
+    margin-top: 0px;
+  }
+  #apps_features .apps_parallax .apps_parallax_bg .apps_feature_list {
+    padding: 40px 10px;
+  }
+  .slider_in_tab2 {
+    padding: 25px 50px;
+  }
+  #apps_portfolio .apps_portfolio_main .portfolio-grid .portfolio-item {
+    width: 50%;
+  }
+  .apps_ipad_tab_detail {
+    margin-top: 30px;
+  }
+  .apps_video_detail {
+    padding: 20px;
+  }
+  .apps_price_table .apps_table {
+    margin-bottom: 20px;
+  }
+  .apps_price_table .apps_table:hover {
+    -webkit-transform: scale3d(1, 1, 1);
+    -moz-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    -o-transform: scale3d(1, 1, 1);
+  }
+  .apps_price_table .active {
+    -webkit-transform: scale3d(1, 1, 1);
+    -moz-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    -o-transform: scale3d(1, 1, 1);
+  }
+  .apps_price_table .apps_table {
+    border-radius: 10px 10px 10px 10px !important;
+  }
+  .apps_price_table .apps_table:hover {
+    border-radius: 10px 10px 10px 10px !important;
+  }
+  .apps_slider .apps_logo {
+    padding-top: 80%;
+  }
+  .apps_slider .apps_logo p {
+    padding-left: 0px;
+    text-align: center;
+  }
+  .apps_icon ul {
+    text-align: center;
+  }
+  .testimonials_q {
+    font-size: 15px;
+    padding-top: 15px;
+  }
+  .logo {
+    text-align: center;
+  }
+  .apps_template_feature_tab {
+    width: 100%;
+    float: left;
+  }
+  .apps_template_feature_tab ul {
+    float: left;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .apps_template_feature_tab ul li {
+    float: left;
+    margin-bottom: 0px;
+    width: 33.333333333333333333%;
+  }
+  .apps_template_feature_tab ul li a {
+    line-height: 50px;
+    text-align: center;
+    width: 100%;
+    float: left;
+    height: 50px;
+    border: 1px solid #DEDEDE;
+    background: #F4F4F4;
+  }
+  .apps_template_feature_tab ul li a p {
+    display: none;
+  }
+  .apps_template_feature_tab ul li.active:after {
+    display: none;
+  }
+  .apps_template_feature_tab ul li.active {
+    padding-right: 0px;
+  }
+  .apps_template_feature {
+    min-height: 500px;
+  }
+  .apps_feature_list_item > .detail {
+    display: none;
+  }
+  #apps_features .apps_parallax .apps_parallax_bg .apps_feature_list .carousel-indicators a .apps_feature_list_item {
+    width: 25%;
+  }
+  #apps_features .apps_parallax .apps_parallax_bg .apps_feature_list .carousel-indicators a .apps_feature_list_item:hover > .icon {
+    width: 100%;
+  }
+  .slider_in_tab_bg2 {
+    margin: 20px 0px;
+  }
+  .Newfooter .Newfooter_top .Newfooter_top_main .Newfooter_top_main_center {
+    padding-left: 15px;
+    margin-top: 10px;
+  }
+  .Newfooter .Newfooter_top .Newfooter_top_main .Newfooter_top_main_left {
+    margin-right: 40px;
+  }
+  .Newfooter .Newfooter_top .Newfooter_top_main .Newfooter_top_main_right {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .slider_in_tab .carousel-caption {
+    display: none;
+  }
+  .slider_in_tab .apps_logo {
+    margin-top: -250px;
+  }
+  .apps_iphone img.top {
+    top: 25px;
+  }
+  .apps_iphone img.back {
+    margin-bottom: 30px;
+  }
+  .apps_feature_list {
+    padding: 0px 10px 40px 10px;
+  }
+  .slider_in_tab2 {
+    padding: 18px 35px;
+  }
+  #apps_portfolio .apps_portfolio_main .portfolio-grid .portfolio-item {
+    width: 100%;
+  }
+  .apps_ipad_tab_detail {
+    margin-top: 30px;
+  }
+  .apps_video_detail {
+    padding: 20px;
+  }
+  .apps_slider .apps_logo {
+    padding-top: 60%;
+  }
+  .apps_logo p {
+    padding-left: 0px;
+    text-align: center;
+  }
+  .apps_icon ul {
+    text-align: center;
+  }
+  .apps_ipad_tab img.two {
+    top: 80px;
+  }
+  .apps_icon ul li {
+    margin-right: 0px;
+  }
+  .apps_icon ul li a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .apps_icon ul li:hover:after {
+    left: 15px;
+  }
+  .apps_social ul li {
+    margin: 0px 5px;
+  }
+  .apps_social ul li a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+  }
+  #apps_portfolio .apps_three_mob .apps-pulldown-40 .apps_ipad_tab_detail a img {
+    width: 120px !important;
+    height: 120px !important;
+  }
+  #apps_services .apps_parallax_testimonials .apps_parallax_testimonials_bg .owl-carousel .owl-wrapper-outer .owl-item {
+    width: 298px !important;
+  }
+}
+.appEWM {
+  position: relative;
+}
+.appEWM img {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  display: none;
+  width: 150px;
+}
+.appEWM2 {
+  position: relative;
+}
+.appEWM2 img {
+  position: absolute;
+  left: 50%;
+  margin-left: -75px;
+  width: 150px;
+  bottom: 40px;
+  display: none;
+}
+.appEWM:hover img,
+.appEWM2:hover img {
+  display: block;
+}
