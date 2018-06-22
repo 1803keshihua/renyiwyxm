@@ -223,24 +223,33 @@ div#apps_contact {
 }
 .apps_header .apps_menu ul li a {
   display: inline-block;
-  padding: 20px 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 5px 15px;
+  margin-right: 3px;
+  margin-left: 3px;
   position: relative;
   font-size: 18px;
-  color: #333333;
+  color: black;
   text-decoration: none;
   cursor: pointer;
 }
 .apps_header .apps_menu ul li a:after {
   position: absolute;
   content: "*";
-  top: 38%;
+  top: 30%;
   font-size: 18px;
   color: #d90f3a;
-  right: -4px;
+  right: -10px;
   box-sizing: border-box;
+}
+.apps_header .apps_menu ul li:last-child a:after {
+  position: absolute;
+  content: "";
 }
 .apps_header .apps_menu ul li.active a {
   color: #999999;
+  background-color: #CCCED6;
 }
 .fixed_menu {
   position: fixed;

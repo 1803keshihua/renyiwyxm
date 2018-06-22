@@ -211,26 +211,35 @@ div#apps_contact {
         position: relative;
         a{
           display: inline-block;
-          padding: 20px 15px;
+          margin-top: 15px;
+          margin-bottom: 15px;
+          padding: 5px 15px;
+          margin-right: 3px;
+          margin-left: 3px;
           position: relative;
           font-size: 18px;
-          color: #333333;
+          color: black;
           text-decoration: none;
           cursor: pointer;
         }
         a:after{
           position: absolute;
           content: "*";
-          top: 38%;
+          top: 30%;
           font-size: 18px;
           color: #d90f3a;
-          right: -4px;
+          right: -10px;
           box-sizing: border-box;
         }
+      }
+      li:last-child a:after{
+        position: absolute;
+        content: "";
       }
       li.active{
         a{
           color: #999999;
+          background-color: #CCCED6;
         }
       }
     }
