@@ -20,6 +20,12 @@
         </array>
       </option>
       <option name="outputFromStdout" value="true" />
+<<<<<<< HEAD
+      <option name="program" value="D:/轮播图/node_modules/.bin/lessc.cmd" />
+=======
+      <option name="program" value="$USER_HOME$/AppData/Roaming/npm/lessc.cmd" />
+>>>>>>> origin/master
+      <option name="program" value="$USER_HOME$/AppData/Roaming/npm/lessc.cmd" />
       <option name="program" value="D:/phpStudy/WWW/定制/node_modules/.bin/lessc.cmd" />
       <option name="runOnExternalChanges" value="true" />
       <option name="scopeName" value="Project Files" />
