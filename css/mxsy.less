@@ -1,0 +1,630 @@
+//导航
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.nav{
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: black;
+  list-style: none;
+  margin: auto;
+}
+.nav.fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 1000000;
+}
+.nav>.ul-logo{
+  list-style: none;
+  margin-left: 300px;
+}
+.nav>.ul-logo>.li-hover{
+  float: left;
+  font-size: 25px;
+  margin-left: 20px;
+  position: relative;
+  line-height: 100px;
+}
+.nav:first-child>span>img{
+  float: left;
+  margin-top: 35px;
+}
+.none{
+  width: 300px;
+  display: none;
+  position: absolute;
+  left: -20px;
+  top: 80px;
+  background: white;
+  opacity: 0.9;
+  z-index: 10;
+}
+.none>h3{
+  float: left;
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 20px;
+  color: black;
+}
+.ul-logo>.li-hover:hover .none{
+   display: block;
+}
+.last-img>span{
+  float: right;
+  margin-top: 35px;
+  margin-right: 140px;
+}
+a{
+  text-decoration-color: white;
+  color: white;
+}
+//轮播
+.carousel-indicators li {
+  display: inline-block;
+  width: 50px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000\9;
+  background-color: rgba(0,0,0,0);
+  border: 1px solid #fff;
+  border-radius: 0px;}
+.carousel-indicators .active {
+  width: 50px;
+  height: 12px;
+  margin: 0;
+  background-color: deeppink;
+}
+//轮播下面的banner_xia
+.banner_xia{
+  width: 100%;
+  height: 160px;
+  background:#e3e3e3;
+
+  .banner_{
+    margin:0px 16.67% 0PX 16.67%;
+    background:#e3e3e3;
+    .banner_left{
+     text-align: center;
+      opacity: 0.8;
+
+    }
+  }
+  .banner_>div{
+    width: 25%;
+    float: left;
+    margin-top:40px;
+
+    span{
+      font-size: 40px;
+      color: blue;
+
+    }
+    b{
+      font-size: 20px;
+      color: blue;
+    }
+    .newIndex2_one_leftBottom{
+      text-align: center;
+    }
+  }
+}
+//newIndex轮播图下1
+.tit{
+  width: 100%;
+  height:60px;
+   text-align: center;
+  margin-top: 50px;
+}
+.newIndex {
+  width: 1200px;
+  height: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+.newIndex>div{
+    width: 300px;
+    height: 350px;
+  float: left;
+  span{
+    font-size: 12px;
+    line-height: 20px;
+  }
+  p{
+    font-size: 20px;
+
+  }
+  }
+.newIndex>div:hover{
+  background:grey;
+opacity: 0.6;
+  p{
+    color: fuchsia;
+  }
+}
+//tit2轮播图下2
+.tit2{
+  width: 200px;
+  height: 90px;
+  background: fuchsia;
+  border-radius: 50% ;
+  text-align: center;
+  line-height: 90px;
+  font-size: 20px;
+  margin: 30px auto ;
+}
+.tit2:hover{
+  background:black;
+  transition: width 2s;
+  p{
+    a{
+      text-decoration: none;
+    }
+  }
+}
+.tit3{
+  text-align: center;
+  text-decoration: none;
+  h3{
+    font-size: 25px;
+    color: fuchsia;
+  }
+}
+//con轮播图下3
+.con{
+  width: 100%;
+  height: 320px;
+  margin-top: 30px;
+
+  .con_1, .con_2, .con_3{
+    float: left;
+    width: 33.33%;
+    height: 320px;
+    background: fuchsia;
+
+
+
+
+  .con_11{
+    float: left;
+    width: 100%;
+    height: 320px;
+    background: url("http://www.mxsyzen.com/views/mxsy/pc/images/newIndex2/newIndex2_three_pic3.jpg");
+  }
+
+    p {
+      font-family: "微软雅黑", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      padding-top: 50px;
+      a {
+        font-size: 25px;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    span{
+      width: 100%;
+      font-size: 16px;
+      color: #fff;
+      margin-top: 20px;
+      line-height: 26px;
+      height: 130px;
+    }
+  }
+  .con_22{
+
+    height: 320px;
+    width: 100%;
+    background: url("http://www.mxsyzen.com/views/mxsy/pc/images/newIndex2/newIndex2_three_pic1.jpg");
+  }
+  .con_33{
+    float: left;
+    width: 100%;
+    height: 320px;
+    background: url("http://www.mxsyzen.com/views/mxsy/pc/images/newIndex2/newIndex2_three_pic2.jpg");
+  }
+}
+//show部分
+.show{
+  width: 100%;
+  height: 1340px;
+  background: grey;
+  opacity: 0.8;
+
+  .show_1{
+    height: 100%;
+    background:url(http://www.mxsyzen.com/views/mxsy/pc/images/newIndex2/newIndex2_four_bg.png) 0 0 no-repeat;
+
+  }
+  .show_head{
+    text-align: center;
+    padding-top: 30px;
+    h3{
+      color: fuchsia;
+      font-weight: bold;
+    }
+    p{
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+  .show_img{
+    width: 100%;
+
+    text-align: center;
+    ul{
+      text-align: center;
+      list-style: none;
+      padding-left: 8%;
+      li{
+        float: left;
+        margin-left: 25px;
+        h4{
+          font-size: 20px;
+        }
+      }
+      li:hover h4{
+        color: fuchsia;
+
+      }
+    }
+  }
+}
+.show_1{
+  .clear_both{
+    clear: both;
+    padding-top: 50px;
+  }
+  .tit5{
+    width: 200px;
+    height: 90px;
+    background: fuchsia;
+    border-radius: 50% ;
+    text-align: center;
+    line-height: 90px;
+    font-size: 20px;
+     margin:  auto;
+  }
+  .tit5:hover{
+    background:black;
+    transition: width 2s;
+    p{
+      a{
+        text-decoration: none;
+      }
+    }
+  }
+}
+//show_2
+.show_2 {
+  .show_2head {
+    .show_2head_img {
+      width: 100%;
+      height: 400px;
+      background: url(http://www.mxsyzen.com/views/mxsy/pc/images/newIndex2/newIndex2_five_bg.jpg) 0 0 no-repeat;
+
+      background-size: 80% 200PX;
+      background-position: center;
+      position: relative;
+      .top {
+        background: yellow;
+        float: left;
+        margin: 140px 0px 0px 280px;
+        p {
+          font-size: 30px;
+        }
+      }
+      .right {
+        width: 200px;
+        height: 80px;
+        background: fuchsia;
+        border-radius: 50%;
+        position: absolute;
+        right: 200px;
+        top: 170px;
+        line-height: 90px;
+        font-size: 20px;
+        margin: auto;
+        text-align: center;
+
+      }
+      .right:hover {
+        background: black;
+        transition: width 2s;
+
+        p {
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .foot {
+      width: 800px;
+      height: 120px;
+      position: absolute;
+      left: 300px;
+      top: 230px;
+
+      ul {
+
+        li {
+          float: left;
+          color: #faebcc;
+          font-weight: bold;
+          margin-left: 60px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+//show_2con部分
+  .show_2con {
+    text-align: center;
+    h3 {
+      color: fuchsia;
+    }
+  }
+    .show_3con {
+      ul {
+        padding-left: 14%;
+        li {
+          float: left;
+          text-align: center;
+          list-style: none;
+          margin-left: 20px;
+        }
+      }
+    }
+    .show_3foot{
+        clear: both;
+        width: 200px;
+        height: 90px;
+        background: fuchsia;
+        border-radius: 50% ;
+        text-align: center;
+        line-height: 90px;
+        font-size: 20px;
+        margin: auto ;
+      }
+  .show_3foot:hover{
+        background:black;
+        transition: width 2s;
+        p{
+          a{
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+//show_3部分
+.show_3 {
+  .show_3head {
+    .show_3head_img {
+      width: 100%;
+      height: 400px;
+      background: url(http://www.mxsyzen.com/views/mxsy/pc/images/newIndex2/newIndex2_seven_bg.jpg) 0 0 no-repeat;
+
+      background-size: 80% 200PX;
+      background-position: center;
+      position: relative;
+      .top {
+        background: blue;
+        float: left;
+        margin: 140px 0px 0px 280px;
+        p {
+          font-size: 30px;
+        }
+      }
+      .right {
+        width: 200px;
+        height: 80px;
+        background: fuchsia;
+        border-radius: 50%;
+        position: absolute;
+        right: 200px;
+        top: 170px;
+        line-height: 90px;
+        font-size: 20px;
+        margin: auto;
+        text-align: center;
+
+      }
+      .right:hover {
+        background: black;
+        transition: width 2s;
+
+        p {
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .foot {
+      width: 800px;
+      height: 120px;
+      position: absolute;
+      left: 300px;
+      top: 230px;
+
+      ul {
+
+        li {
+          float: left;
+          color: #faebcc;
+          font-weight: bold;
+          margin-left: 60px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+//conter部分
+.conter{
+  margin: 0 auto;
+  text-align: center;
+  h3{
+    color: fuchsia;
+  }
+  .con{
+    width:77%;
+
+    margin: 0 auto;
+    background: #faebcc;
+    ul{
+      list-style: none;
+      padding-left:4%;
+      li{
+
+      }
+    }
+    .con_top1, .con_cont1, .con_banner1, .con_foot1{
+      width: 32%;
+      float: left;
+      position: relative;
+      a{text-decoration: none;
+        color: #333333}
+      padding-left: 20px;
+      background: white;
+      .p1{
+        padding-top: 20px;
+        color: #999;
+
+      }
+      .right{
+        width: 2%;
+        height: 90%;
+        background:fuchsia;
+       position: absolute;
+        top: 0px;
+        right: 0px;
+      }
+    }
+    .con_top2, .con_cont2, .con_banner2, .con_foot2{
+      width: 32%;
+      float: left;
+      position: relative;
+     a{ text-decoration: none;
+       color: black}
+      padding-left: 20px;
+      background: white;
+      .p1{
+        padding-top: 20px;
+        color: #999;
+      }
+      .right{
+        width: 2%;
+        height: 90%;
+        background:fuchsia;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+      }
+    }
+    .con_top3, .con_cont3, .con_banner3, .con_foot3{
+      width: 32%;
+      float: left;
+      position: relative;
+      a{text-decoration: none;
+      color: black}
+      padding-left: 20px;
+      background: snow;
+      .p1{
+        padding-top: 20px;
+        color: #999;
+      }
+      .right{
+        width: 2%;
+        height: 90%;
+        background:fuchsia;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+      }
+    }
+  }
+}
+//foot1
+.foot1{
+  ul{
+    list-style: none;
+    padding-left: 20%;
+    li{
+      float: left;
+      margin-left: 30px;
+      p{
+        text-align: center;
+        a{color:black;
+        text-decoration: none;
+       }
+      }
+
+    }
+  }
+  .foot1_head{
+    margin: 0 auto;
+    text-align: center;
+
+    h3{
+      color: fuchsia;
+    }
+
+  }
+}
+.foot2:after,.foot2_head:after{
+  content: '';
+  display: block;
+  clear: both;
+
+}
+.foot2{
+  clear: both;
+  background: url('http://www.mxsyzen.com/views/mxsy/pc/images/newFooter_pic1.jpg') 0 0 no-repeat;
+  background-size:100% ;
+
+  .foot2_top{
+    float: left;
+    margin-left: 17%;
+
+    padding-left: 30px;
+  }
+  .foot2_con{
+
+    padding-left: 30px;
+    float: left;
+    ul{
+      list-style: none;
+      li{
+        float: left;
+        color: white;
+      }
+    }
+
+  }
+  .foot2_foot{
+    padding-left: 30px;
+    float: left;
+    p{
+      color: white;
+    }
+  }
+  .foot2_head{
+
+    border-bottom: white 2px solid ;
+  }
+  p{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+}
