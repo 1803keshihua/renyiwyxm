@@ -1,4 +1,5 @@
- $(window).scroll(function(e){
+/*************网页楼层跳转功能******************/
+$(window).scroll(function(e){
      e.preventDefault();
      e.stopPropagation();
      var Top=$(window).scrollTop();
@@ -31,7 +32,7 @@
      });
  }
 
-
+ /*************导航栏的点击下拉效果******************/
   $(".j-button").click(function () {
     $(".j-nav-popup").slideToggle("slow","linear");
     $(".nav-popup-bg").fadeToggle("slow","linear");
@@ -44,7 +45,7 @@
     });
 });
 
-
+ /*************巨幕下的小圆圈动画******************/
   $(".j-ring").mouseenter(function () {
       var Div=$("<div class='j-hover'></div>");
     $(this).append(Div);
@@ -80,6 +81,7 @@
     });
        fn();
    });
+ /***********************第二页动画效果函数**************************/
       function fn() {
           $(".j-image").hover(function () {
                   $(this).find(".j-rgb").fadeIn("slow");
@@ -93,7 +95,6 @@
               }
           );
       }
-
  $(".j-three-body li").mouseenter(function(){
      var index=$(this).index()+1;
      var passway="../image/studio/icon_advantage_0"+index+".png";
@@ -102,27 +103,40 @@
  $(".j-three-body li").mouseleave(function(){
      $(this).find("img").attr("src","../image/studio/icon_hive.png").removeClass("animated zoomIn");
  });
+ /***********************解决方案动画效果**************************/
  $("#msg-11").focus(function () {
-       $(this).text("");
-       $(this).blur(function () {
-           if($(this).text()==""){
-               $(this).text("想说点什么呢？")
+     $(this).text("");
+     $(this).blur(function () {
+         if($(this).text()==""){
+             $(this).text("想说点什么呢？")
 
-           }
-       });
+         }
+     });
 
-   });
+ });
+ /***********************了解MAXLAB**************************/
+ $(".about ul li").each(function (i) {
+     $(this).mouseenter(function () {
+         $(this).css("background","url('../image/studio/0-"+i+".jpg') no-repeat center center", "backgroundSize", "cover");
 
-  $(".about ul li").each(function (i) {
-      $(this).mouseenter(function () {
-          $(this).css("background","url('../image/studio/0-"+i+".jpg') no-repeat center center", "backgroundSize", "cover");
+         $(this).mouseleave(function () {
+             $(this).css("background","url('../image/studio/"+i+".jpg') no-repeat center center", "backgroundSize", "cover");
+         })
+     });
+ });
 
-          $(this).mouseleave(function () {
-              $(this).css("background","url('../image/studio/"+i+".jpg') no-repeat center center", "backgroundSize", "cover");
-          })
-      });
-  });
-
+ /***********************鼠标图标动画效果**************************/
+ (function(){
+     var bot=parseInt($(".arrow").css("bottom"));
+     var timer;
+     timer=setInterval(function(){
+         bot--;
+         $(".arrow").css("bottom",bot+"px");
+         if(bot<-15){
+             bot=-10;
+         }
+     },200)
+ })();
 
 
 
