@@ -1,3 +1,37 @@
+ $(window).scroll(function(e){
+     e.preventDefault();
+     e.stopPropagation();
+     var Top=$(window).scrollTop();
+     if(Top>100){
+         $(".j-nav").css("position","fixed")
+         }
+ });
+ {    var flag=1;
+     $(".navbar-nav li").click(function(e) {
+         flag=0;
+         e.preventDefault();
+         var index=$(this).index();
+         var scrollTop=$(".j-item").eq(index).offset().top;
+         $("html,body").stop().animate({scrollTop},2000,function(){
+             flag=1;
+         });
+         $(this).find('a').addClass("current").parent().siblings().find("a").removeClass("current");
+     });
+
+     $(window).scroll(function(){
+         if(flag){
+             var scrollTop=$(window).scrollTop();
+             $(".j-item").each(function(index,ele){
+                 if(scrollTop>=$(this).offset().top){
+                     $(".navbar-nav li").find("a").removeClass("current");
+                     $(".navbar-nav li").eq(index).find("a").addClass("current");
+                 }
+             });
+         }
+     });
+ }
+
+
   $(".j-button").click(function () {
     $(".j-nav-popup").slideToggle("slow","linear");
     $(".nav-popup-bg").fadeToggle("slow","linear");
@@ -9,10 +43,12 @@
         $("i").remove();
     });
 });
+
+
   $(".j-ring").mouseenter(function () {
-    var Div=$("<div class='j-hover'></div>");
+      var Div=$("<div class='j-hover'></div>");
     $(this).append(Div);
-  $(this).css("background","white").find("span").css("color","black");
+  $(this).css("background","rgba(255,255,255,0.9)").find("span").css("color","black");
    $(this).mouseleave(function () {
      $(this).css("background","none").find("span").css("color","white");
        $(".j-hover").remove()
@@ -57,32 +93,23 @@
               }
           );
       }
-      $(".j-three-body li").each(function (i) {
 
-
-          $(this).mouseenter(function () {
-              var img=$("<img src='../image/studio/icon_advantage_0" + (i+1) + ".png'/>")
-
-              $(this).find("div").replaceWith(img);
-
-                 // $(this).find("img").stop().animate({"width":"68px","height":"68px","left":"300px","bottom":"-90px"},1000)
-          } );
-
-          $(this).mouseleave(function () {
-              $(this).find("img").css("display","none")
-          })
-
-
-      });
-
-   $("#msg-11").focus(function () {
+ $(".j-three-body li").mouseenter(function(){
+     var index=$(this).index()+1;
+     var passway="../image/studio/icon_advantage_0"+index+".png";
+     $(this).find("img").attr("src",passway).addClass("animated zoomIn");
+ });
+ $(".j-three-body li").mouseleave(function(){
+     $(this).find("img").attr("src","../image/studio/icon_hive.png").removeClass("animated zoomIn");
+ });
+ $("#msg-11").focus(function () {
        $(this).text("");
        $(this).blur(function () {
            if($(this).text()==""){
                $(this).text("想说点什么呢？")
 
            }
-       })
+       });
 
    });
 
@@ -93,7 +120,7 @@
           $(this).mouseleave(function () {
               $(this).css("background","url('../image/studio/"+i+".jpg') no-repeat center center", "backgroundSize", "cover");
           })
-      })
+      });
   });
 
 

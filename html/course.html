@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/tsx/course.css">
     <link rel="stylesheet" href="../css/animate.css">
-    <link rel="stylesheet" href="../css/tsx/iconfont.css">
 </head>
 <body>
     <!--导航开始-->
@@ -163,7 +162,7 @@
             <h1 class="RyEdu_one_title" style="padding-top:30px;">用户体验设计</h1>
             <h3 class="RyEdu_one_titleSmall">这是一个培训过剩但价值紧缺的时代，不只为提供培训，更期望提供“思想”的能力。以“创意、设计、实践”为核心，力求有含量、有价值、有灵魂。</h3>
             <div class="RyEdu_one_main">
-                <div class="RyEdu_one_main_left animate" id="my1RyEdu_one_main_left">
+                <div class="RyEdu_one_main_left">
                     <img src="http://www.renyilink.com/themeResource/theme4/images/RyEdu_one_Icon1.png" class="img1" />
                     <p class="RyEdu_one_main_p1">行业人才需求高达100万</p>
                     <p class="RyEdu_one_main_p2">现在所有互联网公司、IT公司都需要UI设计师。像谷歌、Facebook、三星、百度、腾讯、阿里巴巴等知名企业，对UI设计师的需求更是巨大。目前行业人才需求高达100万。</p>
@@ -173,7 +172,7 @@
                     <p class="RyEdu_one_main_p1">100%高薪就业率</p>
                     <p class="RyEdu_one_main_p2">任意GET所有学员无缝对接任意JOB，突破层层面试，顺利拿到风口互联网公司的offer！百度、网易、京东……</p>
                 </div>
-                <div class="RyEdu_one_main_left animate" id="my2RyEdu_one_main_left">
+                <div class="RyEdu_one_main_left">
                     <img src="http://www.renyilink.com/themeResource/theme4/images/RyEdu_one_Icon3.png" class="img1" />
                     <p class="RyEdu_one_main_p1">收入无上限，¥20000，只是平均薪</p>
                     <p class="RyEdu_one_main_p2">任意GET近期学员就业平均月薪8000+<br />应届毕业生8-12K<br />初级UI设计师12-15K<br />中级UI设计师20K+<br />高级UI设计师30K+</p>
@@ -974,13 +973,8 @@
                 <div class="RyEdu_Ten_left">
                     <p class="RyEdu_Ten_left_p1">GET YOUR FUTURE</p>
                     <p class="RyEdu_Ten_left_p2">如果真要谈愿景，就从即刻开始</p>
-                    <div class="RyEdu_Ten_left_mian">
-                        <input id="clientUserInfoNameInput" type="text" class="inp1" placeholder="听说你有个好名字"/>
-                        <input id="clientUserInfoTelNumInput" type="text" class="inp1" placeholder="你的电话号码"/>
-                    </div>
-                    <div class="RyEdu_Ten_left_Btn">
-                        <button id="btnA">小确幸</button>
-                    </div>
+                    <div class="RyEdu_Ten_left_mian"><input id="clientUserInfoNameInput" type="text" class="inp1" onFocus="if(this.value=='听说你有个好名字'){this.value=''};" onBlur="if(this.value==''){this.value='听说你有个好名字'};" value="听说你有个好名字"  /><input id="clientUserInfoTelNumInput" type="text" class="inp1" onFocus="if(this.value=='你的电话号码'){this.value=''};" onBlur="if(this.value==''){this.value='你的电话号码'};" value="你的电话号码"  /></div>
+                    <div class="RyEdu_Ten_left_Btn"><button onclick="submitUserInfo(this);">小确幸</button></div>
                 </div>
                 <div class="RyEdu_Ten_right">
                     <p class="RyEdu_Ten_left_p1">HURRY UP!!</p>
@@ -1129,52 +1123,9 @@
         <div class="Newfooter_bottom">Copyright&nbsp;©&nbsp;2015&nbsp;&nbsp;renyilink.com京ICP备15062383号<br />renyilink.com&nbsp;保留所有版权&nbsp;使用这些服务遵守用户协议。</div>
     </div>
     <!--foot部分结束-->
-
-    <!--返回头部开始-->
-    <div id="returnHead" style="display:none">
-        <i class="iconfont icon-xiangshangjiantou" ></i>
-    </div>
-    <!--返回头部结束-->
 <script type="text/javascript" src="../bootstrap/js/jquery.js"></script>
 <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../js/course/course.js" ></script>
 </body>
 </html>
-<script>
-    function funName(){
-        if($("#clientUserInfoNameInput").val()==""){
-            alert("姓名不能为空！");
-            return false;
-        } else {
-            var res=/^[(\u4e00-\u9fa5)|(a-zAZ)].*$/;
-            if(res.test($("#clientUserInfoNameInput").val())){
-                return true;
-            } else {
-                alert("你输入的姓名不符合要求！");
-                return false;
-            }
-        }
-    }
 
-    function funTel(){
-        if($("#clientUserInfoTelNumInput").val()==""){
-            alert("电话号码不能为空！")
-        } else{
-            var res=/^(0|86|17951)?(13[0-9]|17[0-9]|15[012356789]|18[0-9]|14[57])[0-9]{8}$/;
-            if(res.test($("#clientUserInfoTelNumInput").val())){
-                return true;
-            } else{
-                alert("你输入的电话号码不符合要求！");
-                return false;
-            }
-        }
-    }
-
-    $("#btnA").click(function(){
-        var res1=funTel();
-        var res2=funName();
-        if(res1&&res2){
-            alert("我们会根据你留的的信息联系你!")
-        }
-    })
-</script>

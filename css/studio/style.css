@@ -96,7 +96,7 @@ input:focus {
     -webkit-box-shadow: 0 0 3px 3px #ebebeb;
     box-shadow: 0 0 3px 3px #ebebeb;
 	float: left;
-	position: relative;
+	position:relative;
 
 }
 
