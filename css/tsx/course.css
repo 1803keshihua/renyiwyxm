@@ -73,7 +73,7 @@ ul {
 #header #moveNav li a {
   display: inline-block;
   font-size: 14px;
-  color: #CCCED6;
+  color: #666666;
   padding: 10px 20px;
   -webkit-transition: all .1s;
   -moz-transition: all .1s;
@@ -1645,4 +1645,21 @@ ul {
 }
 #returnHead .iconfont {
   font-size: 50px;
+}
+#returnHead {
+  width: 50px;
+  height: 80px;
+  background: #666666;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+}
+#returnHead #returnHeader {
+  margin-top: 0;
+  height: 50px;
+  line-height: 50px;
+}
+#returnHead #returnHeader .iconfont {
+  font-size: 50px;
+  color: #ffffff;
 }
