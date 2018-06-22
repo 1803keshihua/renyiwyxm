@@ -98,12 +98,10 @@
      var index=$(this).index()+1;
      var passway="../image/studio/icon_advantage_0"+index+".png";
      $(this).find("img").attr("src",passway).addClass("animated zoomIn");
- })
+ });
  $(".j-three-body li").mouseleave(function(){
      $(this).find("img").attr("src","../image/studio/icon_hive.png").removeClass("animated zoomIn");
- })
-
-
+ });
  $("#msg-11").focus(function () {
        $(this).text("");
        $(this).blur(function () {
@@ -111,7 +109,7 @@
                $(this).text("想说点什么呢？")
 
            }
-       })
+       });
 
    });
 
@@ -122,7 +120,7 @@
           $(this).mouseleave(function () {
               $(this).css("background","url('../image/studio/"+i+".jpg') no-repeat center center", "backgroundSize", "cover");
           })
-      })
+      });
   });
 
 
