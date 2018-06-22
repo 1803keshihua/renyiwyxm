@@ -54,11 +54,10 @@
         }
         #useName,#tel,#eMail,#place{
             margin: 6px 0;
-        }
-        #imgA {
-            background: #fff url(http://sgoutong.baidu.com/webim/1528361123/asset/message/css/img/user.png) no-repeat center;
+            position:relative;
         }
         .myL1{
+            position:absolute;
             display: inline;
             float: left;
             padding: 0;
@@ -70,17 +69,19 @@
             border-right:none;
         }
         .form-control{
-            width: 90%;
+            width: 100%;
             height: 30px;
             border-radius:unset;
-            border-left:none;
         }
         .mytTex{
             border:1px solid #3c763d;
-            margin-bottom: 3px;
+            margin-bottom: 6px;
         }
         .form-control-feedback {
             top: 0 !important;
+        }
+        #imgA {
+            background: #fff url(http://sgoutong.baidu.com/webim/1528361123/asset/message/css/img/user.png) no-repeat center;
         }
         #imgB {
             background: #fff url(http://sgoutong.baidu.com/webim/1528361123/asset/message/css/img/phone.png) no-repeat center;
@@ -99,13 +100,25 @@
             padding: 0 0;
             border-radius:2px;
         }
+        .myBtn{
+            background: #00aef3;
+        }
         .myBtn:hover,.myBtn:active,.myBtn:visited{
+            background: #00aef3;
+        }
+        .btn-default:focus {
+            background: #00aef3;
+        }
+        .btn-default:hover{
             background: #00aef3;
         }
         #footer{
             height: 12px;
             padding: 25px 0;
             background: url(http://sgoutong.baidu.com/webim/1528361123/asset/message/css/img/brand.png) no-repeat center;
+        }
+        #inputSuccess1,#inputSuccess2,#inputSuccess3,#inputSuccess4{
+            padding-left:30px;
         }
     </style>
 </head>

@@ -302,7 +302,7 @@ ul {
       bottom: 100px;
       left: 50%;
       margin-left: -100px;
-      .animatedDelay(2.5s);
+      .animatedDelay(1.5s);
       -webkit-animation-duration: 3s;
       -moz-animation-duration: 3s;
       -o-animation-duration: 3s;
@@ -438,6 +438,8 @@ ul {
         padding-top: 60px;
         float: left;
         background: rgba(0,0,0,0.2);
+        transition:all 1s linear;
+        .animatedDelay(2s);
         .img1 {
           display: block;
           width: 75px;
@@ -1366,7 +1368,7 @@ ul {
   }
 }
 
-//内容底部开始
+//内容底部
 .lastPart {
   width: 100%;
   min-width: 1280px;
@@ -1420,7 +1422,7 @@ ul {
   }
 }
 
-//foot部分开始
+//foot部分
 .Newfooter {
   width: 100%;
   overflow: hidden;
@@ -1571,4 +1573,20 @@ ul {
   }
 }
 
+
+//返回顶部
+#returnHead{
+  width: 50px;
+  height: 50px;
+  background: #666666;
+  text-align:center;
+  line-height: 50px;
+  color:#ffffff;
+  position: fixed;
+  bottom:10px;
+  right:10px;
+  .iconfont{
+  font-size:50px
+  }
+}
 
