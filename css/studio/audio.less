@@ -60,6 +60,7 @@ body{
     }
   }
 
+
 .j-nav-popup{
   background: #cc1a2a;
   width:100%;
@@ -87,10 +88,10 @@ body{
 .nav-popup-bg{
     background:#151515;
      width: 100%;
-     height:300px;
+     height: 200px;
      position: absolute;
      bottom:0; left:0;
-     z-index: -1;
+     z-index: -10;
 }
 .j-nav{
   position: relative;
@@ -101,9 +102,11 @@ body{
   margin-left: -650px;
   background: transparent;
   border:none;
+  overflow: hidden;
   .j-navbar-nav{
     padding-left:360px;
   }
+
   li{
      padding-left: 10px;
      font-size: 14px;
@@ -132,7 +135,7 @@ body{
   position: relative;
   top:-80px;
   overflow: hidden;
-  z-index: -20;
+
   margin-bottom:0;
   .j-best{
     position: relative;

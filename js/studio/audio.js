@@ -1,4 +1,4 @@
-/*************网页楼层跳转功能******************/
+/*************鼠标滚动条跳转功能******************/
 $(window).scroll(function(e){
      e.preventDefault();
      e.stopPropagation();
@@ -9,7 +9,10 @@ $(window).scroll(function(e){
          $(".nav-popup-bg").stop().slideUp();
          }
  });
- {    var flag=1;
+/*************网页楼层跳转功能******************/
+ {
+     /*************导航楼层跳转功能******************/
+     var flag=1;
      $(".navbar-nav li").click(function(e) {
          flag=0;
          e.preventDefault();
@@ -18,6 +21,24 @@ $(window).scroll(function(e){
          $("html,body").stop().animate({scrollTop},2000,function(){
              flag=1;
          });
+         $(this).find('a').addClass("current").parent().siblings().find("a").removeClass("current");
+     });
+
+     /*************下拉菜单楼层跳转功能******************/
+     $(".j-nav-popup li").click(function(e) {
+
+         $(".j-nav").css("position","fixed");
+         $(".j-nav-popup").css("display","none");
+         $(".nav-popup-bg").css("display","none");
+         flag=0;
+         e.preventDefault();
+         var index=$(this).index();
+         var scrollTop=$(".j-item").eq(index).offset().top;
+         $("html,body").stop().animate({scrollTop},2000,function(){
+             flag=1;
+         });
+         $(".navbar-nav li").find("a").removeClass("current");
+         $(".navbar-nav li").eq(index).find("a").addClass("current");
          $(this).find('a').addClass("current").parent().siblings().find("a").removeClass("current");
      });
 
