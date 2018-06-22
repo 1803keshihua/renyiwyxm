@@ -1128,4 +1128,41 @@
 <script type="text/javascript" src="../js/course/course.js" ></script>
 </body>
 </html>
+<script>
+    function funName(){
+        if($("#clientUserInfoNameInput").val()==""){
+            alert("姓名不能为空！");
+            return false;
+        } else {
+            var res=/^[(\u4e00-\u9fa5)|(a-zAZ)].*$/;
+            if(res.test($("#clientUserInfoNameInput").val())){
+                return true;
+            } else {
+                alert("你输入的姓名不符合要求！");
+                return false;
+            }
+        }
+    }
 
+    function funTel(){
+        if($("#clientUserInfoTelNumInput").val()==""){
+            alert("电话号码不能为空！")
+        } else{
+            var res=/^(0|86|17951)?(13[0-9]|17[0-9]|15[012356789]|18[0-9]|14[57])[0-9]{8}$/;
+            if(res.test($("#clientUserInfoTelNumInput").val())){
+                return true;
+            } else{
+                alert("你输入的电话号码不符合要求！");
+                return false;
+            }
+        }
+    }
+
+    $("#btnA").click(function(){
+        var res1=funTel();
+        var res2=funName();
+        if(res1&&res2){
+            alert("我们会根据你留的的信息联系你!")
+        }
+    })
+</script>
