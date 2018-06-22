@@ -932,12 +932,21 @@ div#apps_contact {
   font-family: "微软雅黑", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
 }
 #apps_price_tabel .container .row .apps_price_table .apps_table .apps_price {
-  background: #000;
+  background: #666666;
   color: #fff;
   padding: 15px 0;
   font-size: 30px;
   font-weight: bolder;
   text-align: center;
+}
+#apps_price_tabel .container .row .apps_price_table .apps_table .apps_price a {
+  color: #fff;
+}
+#apps_price_tabel .container .row .apps_price_table .apps_table .apps_price:hover {
+  background: #999999;
+}
+#apps_price_tabel .container .row .apps_price_table .apps_table .apps_price:hover a {
+  text-decoration: none;
 }
 #apps_price_tabel .container .row .apps_price_table .apps_table > a {
   width: 100%;

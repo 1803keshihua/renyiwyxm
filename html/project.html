@@ -60,6 +60,13 @@
         <span>最新资讯</span>
         </a>
     </div>
+    <div class="content-bottom">
+        <p>在线课程</p>
+        <p>最新活动</p>
+        <p>最新资讯</p>
+        <p>个性化</p>
+        <p>返回顶部</p>
+    </div>
 </div>
 <!--在线课程-->
 <div class="online active">
@@ -459,7 +466,7 @@
             <a class="NewFindOnline_main_One" target="_blank" href="#">
                 <div class="NewFindOnline_main_OneTop">
                     <div class="freeBox">Free</div>
-                    <img src="../image/imgs/21.jpg" class="img1">image/
+                    <img src="../image/imgs/21.jpg" class="img1">
                     <span></span>
                     <img src="../image/imgs/NewFindOnline_pic2.png" class="img2">
                 </div>
@@ -1312,7 +1319,7 @@
     </div>
 </div>
 <!--个性化-->
-<div class="NewFindSpe">
+<div class="NewFindSpe active">
     <div class="NewIndexSpe">
         <div class="NewIndexFind_title">个性化</div>
         <p class="NewIndexFind_title2"><span>无论走到哪里，都要带上你的工作</span></p>
@@ -1416,7 +1423,7 @@
 <script>
     /*页面滚动触发事件*/
     $(window).scroll(function(){
-        if($(this).scrollTop()>0){
+        if($(this).scrollTop()>80){
             $(".head1").hide();
             $(".head2").stop().slideDown("slow")
         }else{
@@ -1459,6 +1466,41 @@
         var top=$(".active").eq(Index).offset().top;
         $(window).scrollTop(top);
     });
+    var flag=1;
+    $(".content-bottom p").click(function(){
+        flag=0;
+        var Index=$(this).index();
+        if(Index==4){
+            $("body,html").animate({scrollTop:0},2000,function(){
+                $(".content-bottom ").hide();
+                flag=1;
+            });
+            $(this).addClass("add").siblings().removeClass();
+        }else{
+            var top=$(".active").eq(Index).offset().top;
+            $("body,html").animate({scrollTop:top},2000,function(){
+                flag=1;
+            });
+            $(this).addClass("add").siblings().removeClass();
+        }
+    });
+    $(window).scroll(function(){
+        if(flag){
+            var top=$(this).scrollTop();
+            if(top>680){
+                $(".content-bottom ").show();
+            }else{
+                $(".content-bottom ").hide();
+            }
+            $(".active").each(function(index,ele){
+                if(top>$(this).offset().top){
+                    $('.content-bottom p').removeClass();
+                    $('.content-bottom p ').eq(index).addClass("add");
+                }
+            })
+        }
+    });
+
 
 
     /*在线课程*/

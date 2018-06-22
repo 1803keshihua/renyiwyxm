@@ -18,14 +18,14 @@
     <script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/audio.css">
+    <link rel="stylesheet" href="../css/studio/audio.css">
     <link rel="stylesheet" href="../font_640968_5wngkzcopc/iconfont.css">
-    <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="../css/htmleaf-demo.css">
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/styleCss.css">
-    <link rel="stylesheet" href="../css/foxholder-styles.css">
-
+    <link rel="stylesheet" type="text/css" href="../css/studio/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../css/studio/htmleaf-demo.css">
+    <link rel="stylesheet" href="../css/studio/style.css" />
+    <link rel="stylesheet" href="../css/studio/styleCss.css">
+    <link rel="stylesheet" href="../css/studio/foxholder-styles.css">
+    <link rel="stylesheet" href="../css/studio/animate.css">
 </head>
 <body>
 <!--导航条下拉菜单开始-->
@@ -41,7 +41,6 @@
 </div>
 <div class="nav-popup-bg" style="display: none; height: 165px;"></div>
 <!--导航条下拉菜单结束-->
-
 <!--导航条开始-->
 <nav class="navbar navbar-default j-nav">
     <div class="container">
@@ -66,10 +65,10 @@
         </div><!-- /.container-fluid -->
     </div>
 </nav>
-
 <!--导航条结束-->
 <!--巨幕轮播开始-->
-<div class="jumbotron my-j-jumbotron clearfix">
+
+<div class="jumbotron my-j-jumbotron clearfix j-item">
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
@@ -81,10 +80,10 @@
             </div>
         </div>
     </div>
-    <div class="container j-best">
+    <div class="container j-best  clearfix">
         <div class="carousel-caption">
             <h2>做最好的设计</h2>
-            <div class="ring">
+            <div class="ring clearfix">
                 <div class="j-ring">
                     <div class="j-text">
                         <span class="j-key">签约客户</span>
@@ -102,12 +101,17 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="clearfix"></div>
-</div>
 
+    </div>
+</div>
+<div class="mouse">
+
+  <div class="arrow"></div>
+
+
+</div>
 <!--巨幕轮播结束-->
-<div class="j-body clearfix">
+<div class="j-body clearfix j-item">
     <div class="container j-body-header text-center clearfix j-five-title">
         <h2>服务范围</h2>
         <p class="j-five-title-1" >Service Area</p>
@@ -172,22 +176,22 @@
     </div>
 </div>
 <!--&lt;!&ndash;第二部分结束-->
-<div class="htmleaf-container clearfix">
+<div class="htmleaf-container clearfix j-second j-item">
     <div class="container text-center j-txt">
         <h1 class="j-txt">案例作品</h1>
         <p class="j-footer-text-1">Case work </p>
+        <i></i>
     </div>
     <div class="htmleaf-content" style="padding:2em 0;">
         <div id="buttons"></div>
         <div id="gallery">
             <div class="htmleaf-container">
-
                 <div class="container mt50">
                     <div class="row">
                         <div class="col-md-4 col-sm-6">
                             <div class="box">
-            <img src="../image/studio/big_1.jpg" data-tags="会展" alt="Alex Man" />
-                <div class="over-layer" data-tags="会展">
+                <img src="../image/studio/big_1.jpg" data-tags="会展" alt="Alex Man" />
+                <div class="over-layer" >
                     <h3 class="title">Web designer</h3>
                     <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci blanditiis tenetur veniam? Ad architecto asperiores blanditiis.</p>
                     <ul class="social-links">
@@ -214,7 +218,7 @@
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
-                            <div class="box">
+                            <div class="box j-box">
                                 <img src="../image/studio/big_3.jpg" data-tags="产品/包装" alt="Host Key" />
                                 <div class="over-layer">
                                     <h3 class="title">Web designer</h3>
@@ -452,7 +456,7 @@
 
 </div>
 
-<div class=" j-three " >
+<div class="j-three j-item" >
     <div class="row text-center j-five-title">
         <h2>服务范围</h2>
         <p class="j-five-title-1">Service Area</p>
@@ -482,7 +486,7 @@
 </div>
 <!--&lt;!&ndash;&lt;!&ndash;第三部分结束&ndash;&gt;-->
 
-<div class="j-four">
+<div class="j-four j-item">
     <div class="container text-center j-five-title">
         <h1 >解决方案</h1>
         <p class="j-five-title-1">Solution</p>
@@ -517,7 +521,7 @@
     </div>
 </div>
 <!--&lt;!&ndash;&lt;!&ndash;第四部分结束&ndash;&gt;-->
-<div class="j-five ">
+<div class="j-five j-item">
     <div class="container j-five-body ">
         <div class="row text-center  j-five-title">
             <h2 >了解MAXLAB</h2>
@@ -573,7 +577,7 @@
 
 </div>
 <!--&lt;!&ndash;&lt;!&ndash;第五部分结束&ndash;&gt;-->
-<div class="j-footer">
+<div class="j-footer j-item">
     <div class="container j-five-body ">
         <div class="row text-center  j-five-title">
             <h2  class="j-footer-text">联系我们</h2>
@@ -603,7 +607,7 @@
 </html>
 <script src="../bootstrap/js/jquery.js"></script>
 <script src="../bootstrap/js/bootstrap.min.js"></script>
-<script>window.jQuery || document.write('<script src="../js/Jdemo/jquery-1.11.0.min.js"><\/script>')</script>
-<script src="../js/Jdemo/filter-tags.js"></script>
-<script src="../js/Jdemo/prism.js"></script>
-<script src="../js/audio.js"></script>
+<script>window.jQuery || document.write('<script src="../js/studio/Jdemo/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="../js/studio/Jdemo/filter-tags.js"></script>
+<script src="../js/studio/Jdemo/prism.js"></script>
+<script src="../js/studio/audio.js"></script>
