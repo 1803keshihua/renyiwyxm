@@ -5,7 +5,16 @@
 li{
   list-style: none;
 }
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
 body{
+
   width: 100%;
   .j-five-title{
     text-align: center;
@@ -14,6 +23,7 @@ body{
     font-size:16px;
     font-weight: bold;
     padding-top: 30px;
+
 
   }
   .j-five-title-1{
@@ -27,15 +37,30 @@ body{
     color: grey;
     font-size: 16px;
   }
-}
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
+
+  .mouse {
+    position: fixed;
+    z-index: 9999;
+    width: 16px;
+    height: 23px;
+    bottom: 35px;
+    left: 50%;
+    margin-left: -8px;
+    background: url("../image/studio/icon_mouse.png") no-repeat;
+    }
+    .mouse .arrow {
+      width: 10px;
+      height: 5px;
+      background: url("../image/studio/icon_mouse_arrow.png") no-repeat;
+      overflow: hidden;
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      margin-left: -5px;
+    }
+  }
+
+
 .j-nav-popup{
   background: #cc1a2a;
   width:100%;
@@ -94,7 +119,9 @@ body{
        color: #cc1a2a;
      }
   }
-  .navbar-collapse ul li a:hover{
+  .navbar-collapse ul li a:hover,
+  .navbar-collapse ul li a.current
+  {
     color: #cc1a2a;
   }
 }
@@ -102,13 +129,15 @@ body{
   padding-top: 0;
   padding-bottom: 0;
   position: relative;
-  top:0;
-  z-index: -100;
-  margin-bottom:0px;
+  top:-80px;
+  overflow: hidden;
+
+  margin-bottom:0;
   .j-best{
     position: relative;
+    border: 1px solid red;
     .carousel-caption{
-      width: 1100px;
+      width: 100%;
       height: 480px;
       background: url("../image/studio/do_the_best (1).png") left 50% no-repeat;
       position: absolute;
@@ -116,11 +145,14 @@ body{
       h2{
         position: absolute;
         left:0;
-        top:20px;
+        top:30px;
+        color: #3498DB;
+        font-size: 30px;
       }
       .ring{
        position: relative;
         padding-left: 400px;
+        z-index: 1000;
         .j-ring{
           float: left;
           margin-left: 50px;
@@ -130,15 +162,15 @@ body{
           border-radius:50%;
           margin-top: 140px;
           position: relative;
-          z-index:100;
+          z-index: -1;
           .j-hover{
-            width: 231px;
-            height: 231px;
-            top: -24px;
-            left: -24px;
-            opacity: 0.1;
+            width: 225px;
+            height: 225px;
+            top: -23px;
+            left: -22px;
+            opacity: 0.9;
             position: absolute;
-            background: white;
+            background: rgba(255,255,255,0.4);
             border-radius:50%;
             z-index: -2;
           }
@@ -165,8 +197,9 @@ height: 600px;
   background:url("../image/studio/body.jpg") no-repeat;
   background-size: cover;
   position: relative;
+  top:-83px;
+  overflow: hidden;
   .j-body-header{
-    border: 1px solid red;
      .j-image{
        float: left;
        display: block;
@@ -258,10 +291,32 @@ height: 600px;
 
 }
 
+.j-second{
+  position: relative;
+  top:-83px;
+  i{
+    display: block;
+    width: 27px;
+    height: 5px;
+    background-color: #ca1c0d;
+    margin: 15px auto 30px;
+  }
+}
+
+
 .j-three {
   width: 100%;
   height: 600px;
   background: url("../image/studio/body.jpg") no-repeat;
+  position: relative;
+  top:-83px;
+  i{
+    display: block;
+    width: 27px;
+    height: 5px;
+    background-color: #ca1c0d;
+    margin: 15px auto 30px;
+  }
   .j-three-body {
     height: 100%;
     background: url("../image/studio/advantage_content.png") no-repeat;
@@ -269,10 +324,10 @@ height: 600px;
       height: 300px;
       margin-left: 400px;
       margin-top: 30px;
-      border: 1px solid;
       li {
-        border: 1px solid;
         line-height: 50px;
+        list-style: none;
+
         a {
           color: black;
           font-size: 14px;
@@ -284,43 +339,45 @@ height: 600px;
           text-align: center;
           margin-right: 4px;
         }
-        div {
-          width: 20px;
-          height: 20px;
-          //background: url("../image/studio/icon_hive.png") no-repeat;
-          float: left;
-        }
         .icon-image0 {
           margin-left: 114px;
           margin-top: 17px;
+          display: inline;
         }
         .icon-image1 {
           margin-left: 161px;
           margin-top: 17px;
+          display: inline;
         }
         .icon-image2 {
           margin-left: 187px;
           margin-top: 17px;
+          display: inline;
         }
         .icon-image3 {
           margin-left: 198px;
           margin-top: 17px;
+          display: inline;
         }
         .icon-image4 {
           margin-left: 198px;
           margin-top: 17px;
+          display: inline;
         }
         .icon-image5 {
           margin-left: 184px;
           margin-top: 17px;
+          display: inline;
         }
         .icon-image6 {
           margin-left: 157px;
           margin-top: 17px;
+          display: inline;
         }
         .icon-image7 {
           margin-left: 107px;
           margin-top: 17px;
+          display: inline;
         }
 
       }
@@ -332,9 +389,11 @@ height: 600px;
 
 
 .j-four {
-  height: 647px;
+  height: 750px;
   background: url("../image/studio/service_background.jpg");
   color:white;
+  position: relative;
+  top:-83px;
   form{
     position: relative;
     left: -140px;
@@ -409,6 +468,7 @@ height: 600px;
   background:url("../image/studio/body.jpg") no-repeat;
   padding-top: 40px;
   position: relative;
+  top:-83px;
   width: 100%;
   overflow: hidden;
   i{
@@ -450,6 +510,7 @@ height: 600px;
     position: relative;
     width: 100%;
     height: 100%;
+
     .about-img{
       position: absolute;
       top:-160px;
@@ -491,6 +552,8 @@ height: 600px;
   width: 100%;
   background: url("../image/studio/contact.jpg") no-repeat;
   position: relative;
+  top:-83px;
+  overflow: hidden;
 
   i{
     display: block;
