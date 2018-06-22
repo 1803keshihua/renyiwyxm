@@ -1,12 +1,18 @@
- $(window).scroll(function(e){
+/*************鼠标滚动条跳转功能******************/
+$(window).scroll(function(e){
      e.preventDefault();
      e.stopPropagation();
      var Top=$(window).scrollTop();
-     if(Top>100){
-         $(".j-nav").css("position","fixed")
+     if(Top>0){
+         $(".j-nav").css("position","fixed");
+         $(".j-nav-popup").stop().slideUp();
+         $(".nav-popup-bg").stop().slideUp();
          }
  });
- {    var flag=1;
+/*************网页楼层跳转功能******************/
+ {
+     /*************导航楼层跳转功能******************/
+     var flag=1;
      $(".navbar-nav li").click(function(e) {
          flag=0;
          e.preventDefault();
@@ -15,6 +21,24 @@
          $("html,body").stop().animate({scrollTop},2000,function(){
              flag=1;
          });
+         $(this).find('a').addClass("current").parent().siblings().find("a").removeClass("current");
+     });
+
+     /*************下拉菜单楼层跳转功能******************/
+     $(".j-nav-popup li").click(function(e) {
+
+         $(".j-nav").css("position","fixed");
+         $(".j-nav-popup").css("display","none");
+         $(".nav-popup-bg").css("display","none");
+         flag=0;
+         e.preventDefault();
+         var index=$(this).index();
+         var scrollTop=$(".j-item").eq(index).offset().top;
+         $("html,body").stop().animate({scrollTop},2000,function(){
+             flag=1;
+         });
+         $(".navbar-nav li").find("a").removeClass("current");
+         $(".navbar-nav li").eq(index).find("a").addClass("current");
          $(this).find('a').addClass("current").parent().siblings().find("a").removeClass("current");
      });
 
@@ -31,7 +55,7 @@
      });
  }
 
-
+ /*************导航栏的点击下拉效果******************/
   $(".j-button").click(function () {
     $(".j-nav-popup").slideToggle("slow","linear");
     $(".nav-popup-bg").fadeToggle("slow","linear");
@@ -44,7 +68,7 @@
     });
 });
 
-
+ /*************巨幕下的小圆圈动画******************/
   $(".j-ring").mouseenter(function () {
       var Div=$("<div class='j-hover'></div>");
     $(this).append(Div);
@@ -80,6 +104,7 @@
     });
        fn();
    });
+ /***********************第二页动画效果函数**************************/
       function fn() {
           $(".j-image").hover(function () {
                   $(this).find(".j-rgb").fadeIn("slow");
@@ -93,7 +118,6 @@
               }
           );
       }
-
  $(".j-three-body li").mouseenter(function(){
      var index=$(this).index()+1;
      var passway="../image/studio/icon_advantage_0"+index+".png";
@@ -102,27 +126,40 @@
  $(".j-three-body li").mouseleave(function(){
      $(this).find("img").attr("src","../image/studio/icon_hive.png").removeClass("animated zoomIn");
  });
+ /***********************解决方案动画效果**************************/
  $("#msg-11").focus(function () {
-       $(this).text("");
-       $(this).blur(function () {
-           if($(this).text()==""){
-               $(this).text("想说点什么呢？")
+     $(this).text("");
+     $(this).blur(function () {
+         if($(this).text()==""){
+             $(this).text("想说点什么呢？")
 
-           }
-       });
+         }
+     });
 
-   });
+ });
+ /***********************了解MAXLAB**************************/
+ $(".about ul li").each(function (i) {
+     $(this).mouseenter(function () {
+         $(this).css("background","url('../image/studio/0-"+i+".jpg') no-repeat center center", "backgroundSize", "cover");
 
-  $(".about ul li").each(function (i) {
-      $(this).mouseenter(function () {
-          $(this).css("background","url('../image/studio/0-"+i+".jpg') no-repeat center center", "backgroundSize", "cover");
+         $(this).mouseleave(function () {
+             $(this).css("background","url('../image/studio/"+i+".jpg') no-repeat center center", "backgroundSize", "cover");
+         })
+     });
+ });
 
-          $(this).mouseleave(function () {
-              $(this).css("background","url('../image/studio/"+i+".jpg') no-repeat center center", "backgroundSize", "cover");
-          })
-      });
-  });
-
+ /***********************鼠标图标动画效果**************************/
+ (function(){
+     var bot=parseInt($(".arrow").css("bottom"));
+     var timer;
+     timer=setInterval(function(){
+         bot--;
+         $(".arrow").css("bottom",bot+"px");
+         if(bot<-15){
+             bot=-10;
+         }
+     },200)
+ })();
 
 
 
