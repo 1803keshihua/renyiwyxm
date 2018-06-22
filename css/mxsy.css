@@ -1,0 +1,604 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.nav {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: black;
+  list-style: none;
+  margin: auto;
+}
+.nav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 1000000;
+}
+.nav > .ul-logo {
+  list-style: none;
+  margin-left: 300px;
+}
+.nav > .ul-logo > .li-hover {
+  float: left;
+  font-size: 25px;
+  margin-left: 20px;
+  position: relative;
+  line-height: 100px;
+}
+.nav:first-child > span > img {
+  float: left;
+  margin-top: 35px;
+}
+.none {
+  width: 300px;
+  display: none;
+  position: absolute;
+  left: -20px;
+  top: 80px;
+  background: white;
+  opacity: 0.9;
+  z-index: 10;
+}
+.none > h3 {
+  float: left;
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 20px;
+  color: black;
+}
+.ul-logo > .li-hover:hover .none {
+  display: block;
+}
+.last-img > span {
+  float: right;
+  margin-top: 35px;
+  margin-right: 140px;
+}
+a {
+  text-decoration-color: white;
+  color: white;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 50px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000\9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  border-radius: 0px;
+}
+.carousel-indicators .active {
+  width: 50px;
+  height: 12px;
+  margin: 0;
+  background-color: deeppink;
+}
+.banner_xia {
+  width: 100%;
+  height: 160px;
+  background: #e3e3e3;
+}
+.banner_xia .banner_ {
+  margin: 0px 16.67% 0PX 16.67%;
+  background: #e3e3e3;
+}
+.banner_xia .banner_ .banner_left {
+  text-align: center;
+  opacity: 0.8;
+}
+.banner_xia .banner_ > div {
+  width: 25%;
+  float: left;
+  margin-top: 40px;
+}
+.banner_xia .banner_ > div span {
+  font-size: 40px;
+  color: blue;
+}
+.banner_xia .banner_ > div b {
+  font-size: 20px;
+  color: blue;
+}
+.banner_xia .banner_ > div .newIndex2_one_leftBottom {
+  text-align: center;
+}
+.tit {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  margin-top: 50px;
+}
+.newIndex {
+  width: 1200px;
+  height: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+.newIndex > div {
+  width: 300px;
+  height: 350px;
+  float: left;
+}
+.newIndex > div span {
+  font-size: 12px;
+  line-height: 20px;
+}
+.newIndex > div p {
+  font-size: 20px;
+}
+.newIndex > div:hover {
+  background: grey;
+  opacity: 0.6;
+}
+.newIndex > div:hover p {
+  color: fuchsia;
+}
+.tit2 {
+  width: 200px;
+  height: 90px;
+  background: fuchsia;
+  border-radius: 50% ;
+  text-align: center;
+  line-height: 90px;
+  font-size: 20px;
+  margin: 30px auto ;
+}
+.tit2:hover {
+  background: black;
+  transition: width 2s;
+}
+.tit2:hover p a {
+  text-decoration: none;
+}
+.tit3 {
+  text-align: center;
+  text-decoration: none;
+}
+.tit3 h3 {
+  font-size: 25px;
+  color: fuchsia;
+}
+.con {
+  width: 100%;
+  height: 320px;
+  margin-top: 30px;
+}
+.con .con_1,
+.con .con_2,
+.con .con_3 {
+  float: left;
+  width: 33.33%;
+  height: 320px;
+  background: fuchsia;
+}
+.con .con_1 .con_11,
+.con .con_2 .con_11,
+.con .con_3 .con_11 {
+  float: left;
+  width: 100%;
+  height: 320px;
+  background: url("http://www.mxsyzen.com/views/mxsy/pc/images/newIndex2/newIndex2_three_pic3.jpg");
+}
+.con .con_1 p,
+.con .con_2 p,
+.con .con_3 p {
+  font-family: "微软雅黑", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  padding-top: 50px;
+}
+.con .con_1 p a,
+.con .con_2 p a,
+.con .con_3 p a {
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+.con .con_1 span,
+.con .con_2 span,
+.con .con_3 span {
+  width: 100%;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 20px;
+  line-height: 26px;
+  height: 130px;
+}
+.con .con_22 {
+  height: 320px;
+  width: 100%;
+  background: url("http://www.mxsyzen.com/views/mxsy/pc/images/newIndex2/newIndex2_three_pic1.jpg");
+}
+.con .con_33 {
+  float: left;
+  width: 100%;
+  height: 320px;
+  background: url("http://www.mxsyzen.com/views/mxsy/pc/images/newIndex2/newIndex2_three_pic2.jpg");
+}
+.show {
+  width: 100%;
+  height: 1340px;
+  background: grey;
+  opacity: 0.8;
+}
+.show .show_1 {
+  height: 100%;
+  background: url(http://www.mxsyzen.com/views/mxsy/pc/images/newIndex2/newIndex2_four_bg.png) 0 0 no-repeat;
+}
+.show .show_head {
+  text-align: center;
+  padding-top: 30px;
+}
+.show .show_head h3 {
+  color: fuchsia;
+  font-weight: bold;
+}
+.show .show_head p {
+  font-size: 18px;
+  font-weight: bold;
+}
+.show .show_img {
+  width: 100%;
+  text-align: center;
+}
+.show .show_img ul {
+  text-align: center;
+  list-style: none;
+  padding-left: 8%;
+}
+.show .show_img ul li {
+  float: left;
+  margin-left: 25px;
+}
+.show .show_img ul li h4 {
+  font-size: 20px;
+}
+.show .show_img ul li:hover h4 {
+  color: fuchsia;
+}
+.show_1 .clear_both {
+  clear: both;
+  padding-top: 50px;
+}
+.show_1 .tit5 {
+  width: 200px;
+  height: 90px;
+  background: fuchsia;
+  border-radius: 50% ;
+  text-align: center;
+  line-height: 90px;
+  font-size: 20px;
+  margin: auto;
+}
+.show_1 .tit5:hover {
+  background: black;
+  transition: width 2s;
+}
+.show_1 .tit5:hover p a {
+  text-decoration: none;
+}
+.show_2 .show_2head .show_2head_img {
+  width: 100%;
+  height: 400px;
+  background: url(http://www.mxsyzen.com/views/mxsy/pc/images/newIndex2/newIndex2_five_bg.jpg) 0 0 no-repeat;
+  background-size: 80% 200PX;
+  background-position: center;
+  position: relative;
+}
+.show_2 .show_2head .show_2head_img .top {
+  background: yellow;
+  float: left;
+  margin: 140px 0px 0px 280px;
+}
+.show_2 .show_2head .show_2head_img .top p {
+  font-size: 30px;
+}
+.show_2 .show_2head .show_2head_img .right {
+  width: 200px;
+  height: 80px;
+  background: fuchsia;
+  border-radius: 50%;
+  position: absolute;
+  right: 200px;
+  top: 170px;
+  line-height: 90px;
+  font-size: 20px;
+  margin: auto;
+  text-align: center;
+}
+.show_2 .show_2head .show_2head_img .right:hover {
+  background: black;
+  transition: width 2s;
+}
+.show_2 .show_2head .show_2head_img .right:hover p a {
+  text-decoration: none;
+}
+.show_2 .show_2head .foot {
+  width: 800px;
+  height: 120px;
+  position: absolute;
+  left: 300px;
+  top: 230px;
+}
+.show_2 .show_2head .foot ul li {
+  float: left;
+  color: #faebcc;
+  font-weight: bold;
+  margin-left: 60px;
+  font-size: 15px;
+}
+.show_2 .show_2con {
+  text-align: center;
+}
+.show_2 .show_2con h3 {
+  color: fuchsia;
+}
+.show_2 .show_3con ul {
+  padding-left: 14%;
+}
+.show_2 .show_3con ul li {
+  float: left;
+  text-align: center;
+  list-style: none;
+  margin-left: 20px;
+}
+.show_2 .show_3foot {
+  clear: both;
+  width: 200px;
+  height: 90px;
+  background: fuchsia;
+  border-radius: 50% ;
+  text-align: center;
+  line-height: 90px;
+  font-size: 20px;
+  margin: auto ;
+}
+.show_2 .show_3foot:hover {
+  background: black;
+  transition: width 2s;
+}
+.show_2 .show_3foot:hover p a {
+  text-decoration: none;
+}
+.show_3 .show_3head .show_3head_img {
+  width: 100%;
+  height: 400px;
+  background: url(http://www.mxsyzen.com/views/mxsy/pc/images/newIndex2/newIndex2_seven_bg.jpg) 0 0 no-repeat;
+  background-size: 80% 200PX;
+  background-position: center;
+  position: relative;
+}
+.show_3 .show_3head .show_3head_img .top {
+  background: blue;
+  float: left;
+  margin: 140px 0px 0px 280px;
+}
+.show_3 .show_3head .show_3head_img .top p {
+  font-size: 30px;
+}
+.show_3 .show_3head .show_3head_img .right {
+  width: 200px;
+  height: 80px;
+  background: fuchsia;
+  border-radius: 50%;
+  position: absolute;
+  right: 200px;
+  top: 170px;
+  line-height: 90px;
+  font-size: 20px;
+  margin: auto;
+  text-align: center;
+}
+.show_3 .show_3head .show_3head_img .right:hover {
+  background: black;
+  transition: width 2s;
+}
+.show_3 .show_3head .show_3head_img .right:hover p a {
+  text-decoration: none;
+}
+.show_3 .show_3head .foot {
+  width: 800px;
+  height: 120px;
+  position: absolute;
+  left: 300px;
+  top: 230px;
+}
+.show_3 .show_3head .foot ul li {
+  float: left;
+  color: #faebcc;
+  font-weight: bold;
+  margin-left: 60px;
+  font-size: 15px;
+}
+.conter {
+  margin: 0 auto;
+  text-align: center;
+}
+.conter h3 {
+  color: fuchsia;
+}
+.conter .con {
+  width: 77%;
+  margin: 0 auto;
+  background: #faebcc;
+}
+.conter .con ul {
+  list-style: none;
+  padding-left: 4%;
+}
+.conter .con .con_top1,
+.conter .con .con_cont1,
+.conter .con .con_banner1,
+.conter .con .con_foot1 {
+  width: 32%;
+  float: left;
+  position: relative;
+  padding-left: 20px;
+  background: white;
+}
+.conter .con .con_top1 a,
+.conter .con .con_cont1 a,
+.conter .con .con_banner1 a,
+.conter .con .con_foot1 a {
+  text-decoration: none;
+  color: #333333;
+}
+.conter .con .con_top1 .p1,
+.conter .con .con_cont1 .p1,
+.conter .con .con_banner1 .p1,
+.conter .con .con_foot1 .p1 {
+  padding-top: 20px;
+  color: #999;
+}
+.conter .con .con_top1 .right,
+.conter .con .con_cont1 .right,
+.conter .con .con_banner1 .right,
+.conter .con .con_foot1 .right {
+  width: 2%;
+  height: 90%;
+  background: fuchsia;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.conter .con .con_top2,
+.conter .con .con_cont2,
+.conter .con .con_banner2,
+.conter .con .con_foot2 {
+  width: 32%;
+  float: left;
+  position: relative;
+  padding-left: 20px;
+  background: white;
+}
+.conter .con .con_top2 a,
+.conter .con .con_cont2 a,
+.conter .con .con_banner2 a,
+.conter .con .con_foot2 a {
+  text-decoration: none;
+  color: black;
+}
+.conter .con .con_top2 .p1,
+.conter .con .con_cont2 .p1,
+.conter .con .con_banner2 .p1,
+.conter .con .con_foot2 .p1 {
+  padding-top: 20px;
+  color: #999;
+}
+.conter .con .con_top2 .right,
+.conter .con .con_cont2 .right,
+.conter .con .con_banner2 .right,
+.conter .con .con_foot2 .right {
+  width: 2%;
+  height: 90%;
+  background: fuchsia;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.conter .con .con_top3,
+.conter .con .con_cont3,
+.conter .con .con_banner3,
+.conter .con .con_foot3 {
+  width: 32%;
+  float: left;
+  position: relative;
+  padding-left: 20px;
+  background: snow;
+}
+.conter .con .con_top3 a,
+.conter .con .con_cont3 a,
+.conter .con .con_banner3 a,
+.conter .con .con_foot3 a {
+  text-decoration: none;
+  color: black;
+}
+.conter .con .con_top3 .p1,
+.conter .con .con_cont3 .p1,
+.conter .con .con_banner3 .p1,
+.conter .con .con_foot3 .p1 {
+  padding-top: 20px;
+  color: #999;
+}
+.conter .con .con_top3 .right,
+.conter .con .con_cont3 .right,
+.conter .con .con_banner3 .right,
+.conter .con .con_foot3 .right {
+  width: 2%;
+  height: 90%;
+  background: fuchsia;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.foot1 ul {
+  list-style: none;
+  padding-left: 20%;
+}
+.foot1 ul li {
+  float: left;
+  margin-left: 30px;
+}
+.foot1 ul li p {
+  text-align: center;
+}
+.foot1 ul li p a {
+  color: black;
+  text-decoration: none;
+}
+.foot1 .foot1_head {
+  margin: 0 auto;
+  text-align: center;
+}
+.foot1 .foot1_head h3 {
+  color: fuchsia;
+}
+.foot2:after,
+.foot2_head:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.foot2 {
+  clear: both;
+  background: url('http://www.mxsyzen.com/views/mxsy/pc/images/newFooter_pic1.jpg') 0 0 no-repeat;
+  background-size: 100% ;
+}
+.foot2 .foot2_top {
+  float: left;
+  margin-left: 17%;
+  padding-left: 30px;
+}
+.foot2 .foot2_con {
+  padding-left: 30px;
+  float: left;
+}
+.foot2 .foot2_con ul {
+  list-style: none;
+}
+.foot2 .foot2_con ul li {
+  float: left;
+  color: white;
+}
+.foot2 .foot2_foot {
+  padding-left: 30px;
+  float: left;
+}
+.foot2 .foot2_foot p {
+  color: white;
+}
+.foot2 .foot2_head {
+  border-bottom: white 2px solid ;
+}
+.foot2 p {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
