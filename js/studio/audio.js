@@ -3,8 +3,10 @@ $(window).scroll(function(e){
      e.preventDefault();
      e.stopPropagation();
      var Top=$(window).scrollTop();
-     if(Top>100){
-         $(".j-nav").css("position","fixed")
+     if(Top>0){
+         $(".j-nav").css("position","fixed");
+         $(".j-nav-popup").stop().slideUp();
+         $(".nav-popup-bg").stop().slideUp();
          }
  });
  {    var flag=1;
