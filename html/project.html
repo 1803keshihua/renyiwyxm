@@ -1423,7 +1423,7 @@
 <script>
     /*页面滚动触发事件*/
     $(window).scroll(function(){
-        if($(this).scrollTop()>0){
+        if($(this).scrollTop()>80){
             $(".head1").hide();
             $(".head2").stop().slideDown("slow")
         }else{
@@ -1472,6 +1472,7 @@
         var Index=$(this).index();
         if(Index==4){
             $("body,html").animate({scrollTop:0},2000,function(){
+                $(".content-bottom ").hide();
                 flag=1;
             });
             $(this).addClass("add").siblings().removeClass();
@@ -1485,7 +1486,7 @@
     });
     $(window).scroll(function(){
         if(flag){
-            var top=$(this).scrollTop()+60;
+            var top=$(this).scrollTop();
             if(top>680){
                 $(".content-bottom ").show();
             }else{
