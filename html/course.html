@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/tsx/course.css">
     <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/tsx/iconfont.css">
 </head>
 <body>
     <!--导航开始-->
@@ -974,7 +975,7 @@
                     <p class="RyEdu_Ten_left_p1">GET YOUR FUTURE</p>
                     <p class="RyEdu_Ten_left_p2">如果真要谈愿景，就从即刻开始</p>
                     <div class="RyEdu_Ten_left_mian"><input id="clientUserInfoNameInput" type="text" class="inp1" onFocus="if(this.value=='听说你有个好名字'){this.value=''};" onBlur="if(this.value==''){this.value='听说你有个好名字'};" value="听说你有个好名字"  /><input id="clientUserInfoTelNumInput" type="text" class="inp1" onFocus="if(this.value=='你的电话号码'){this.value=''};" onBlur="if(this.value==''){this.value='你的电话号码'};" value="你的电话号码"  /></div>
-                    <div class="RyEdu_Ten_left_Btn"><button onclick="submitUserInfo(this);">小确幸</button></div>
+                    <div class="RyEdu_Ten_left_Btn"><button id="btnA">小确幸</button></div>
                 </div>
                 <div class="RyEdu_Ten_right">
                     <p class="RyEdu_Ten_left_p1">HURRY UP!!</p>
@@ -1085,10 +1086,10 @@
                 <div class="Newfooter_top_main_left">
                     <p class="Newfooter_top_main_left_title"><span>同行伙伴</span></p>
                     <div class="Newfooter_top_main_left_nr">
-                        <a target="_blank" href="http://www.mxsyzen.com">美行思远</a>
-                        <a target="_blank" href="http://www.maxlab.cc">MAXLAB工作室</a>
-                        <a target="_blank" href="http://www.mxsyzen.com/">艺术留学</a>
-                        <a target="_blank" href="https://music.mxsyzen.com/">音乐留学</a>
+                        <a target="_blank" href="mxsy.html">美行思远</a>
+                        <a target="_blank" href="audio.html">MAXLAB工作室</a>
+                        <a target="_blank" href="mxsy.html">艺术留学</a>
+                        <a target="_blank" href="audio.html">音乐留学</a>
 
                     </div>
                 </div>
@@ -1109,11 +1110,11 @@
             <div class="Newfooter_top_share">
                 <div class="Newfooter_top_share_line"></div>
                 <div class="Newfooter_top_share_nr">
-                    <a href="http://www.douban.com/people/138462358/" target="_blank">
+                    <a href="#" target="_blank">
                         <img src="http://www.renyilink.com/clientResource/images/index_footerNav_ico2.png" class="img1" /></a>
-                    <a href="http://weibo.com/5710476123" target="_blank">
+                    <a href="#" target="_blank">
                         <img src="http://www.renyilink.com/clientResource/images/index_footerNav_ico1.png" class="img1" /></a>
-                    <a href="http://zhan.renren.com/home" target="_blank">
+                    <a href="#" target="_blank">
                         <img src="http://www.renyilink.com/clientResource/images/index_footerNav_ico3.png" class="img1" /></a>
                     <a href="leaveWord.html" class="a1"><img src="http://www.renyilink.com/clientResource/images/index_footerNav_ico4.png" class="img1" />
                         <img src="http://www.renyilink.com/clientResource/images/NewFooterEwm.jpg" class="imgEwm" /></a>
@@ -1123,9 +1124,54 @@
         <div class="Newfooter_bottom">Copyright&nbsp;©&nbsp;2015&nbsp;&nbsp;renyilink.com京ICP备15062383号<br />renyilink.com&nbsp;保留所有版权&nbsp;使用这些服务遵守用户协议。</div>
     </div>
     <!--foot部分结束-->
+
+    <!--返回头部开始-->
+    <div id="returnHead" style="display:none">
+        <div id="returnHeader" >
+            <i class="iconfont icon-xiangshangjiantou" ></i>
+        </div>
+    </div>
+    <!--返回头部结束-->
 <script type="text/javascript" src="../bootstrap/js/jquery.js"></script>
 <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../js/course/course.js" ></script>
 </body>
 </html>
+<script>
+    function funName(){
+        if($("#clientUserInfoNameInput").val()==""){
+            alert("姓名不能为空！");
+            return false;
+        } else {
+            var res=/^[(\u4e00-\u9fa5)|(a-zAZ)].*$/;
+            if(res.test($("#clientUserInfoNameInput").val())){
+                return true;
+            } else {
+                alert("你输入的姓名不符合要求！");
+                return false;
+            }
+        }
+    }
 
+    function funTel(){
+        if($("#clientUserInfoTelNumInput").val()==""){
+            alert("电话号码不能为空！")
+        } else{
+            var res=/^(0|86|17951)?(13[0-9]|17[0-9]|15[012356789]|18[0-9]|14[57])[0-9]{8}$/;
+            if(res.test($("#clientUserInfoTelNumInput").val())){
+                return true;
+            } else{
+                alert("你输入的电话号码不符合要求！");
+                return false;
+            }
+        }
+    }
+
+    $("#btnA").click(function(){
+        var res1=funTel();
+        var res2=funName();
+        if(res1&&res2){
+            alert("我们会根据你留的的信息联系你!")
+        }
+    })
+</script>
