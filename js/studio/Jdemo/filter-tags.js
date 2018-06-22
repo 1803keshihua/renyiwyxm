@@ -38,16 +38,16 @@
         $(this)                                    // The button clicked on
           .addClass('active')                      // Make clicked item active
           .siblings()                              // Get its siblings
-            .removeClass('active') ;              // Remove active from siblings
+            .removeClass('active');               // Remove active from siblings
 
-          $imgs                                      // With all of the images
-          .hide()                                  // Hide them
-          .filter(tagged[tagName])                 // Find ones with this tag
-            .fadeIn(500);                                // Show just those images
-          $(this).$(".over-layer").css("display","none")                                  // Hide them
+          $(".row img").parent().parent().css("display","none");
+          $(".row img").filter(tagged[tagName]).parent().parent().css("display","block");
+          $("#buttons>button:first-child").click(function() {
+              $(".row img").parent().parent().css("display", "block");
 
-      }
-    }).appendTo($buttons);                         // Add to the buttons
+
+          });
+    }}).appendTo($buttons);                         // Add to the buttons
   });
 
 }());
