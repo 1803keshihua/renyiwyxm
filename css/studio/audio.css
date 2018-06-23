@@ -57,8 +57,11 @@ body .mouse .arrow {
 }
 .j-nav-popup {
   background: #cc1a2a;
-  width: 100%;
+  width: 101%;
   line-height: 50px;
+  overflow: hidden;
+  top: -30px;
+  position: relative;
 }
 .j-nav-popup ul {
   margin-left: 200px;
@@ -79,24 +82,25 @@ body .mouse .arrow {
 .nav-popup-bg {
   background: #151515;
   width: 100%;
-  height: 200px;
+  height: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: -10;
+  overflow: hidden;
 }
 .j-nav {
-  position: relative;
+  position: absolute;
   z-index: 9999;
   width: 100%;
-  top: 30px;
-  left: 50%;
+  left: 48%;
   margin-left: -650px;
   background: transparent;
   border: none;
   overflow: hidden;
 }
 .j-nav .j-navbar-nav {
+  padding-top: 30px;
   padding-left: 360px;
 }
 .j-nav li {
@@ -122,14 +126,14 @@ body .mouse .arrow {
 .my-j-jumbotron {
   padding-top: 0;
   padding-bottom: 0;
+  width: 100%;
   position: relative;
-  top: -80px;
+  height: 650px;
   overflow: hidden;
   margin-bottom: 0;
 }
 .my-j-jumbotron .j-best {
   position: relative;
-  border: 1px solid red;
 }
 .my-j-jumbotron .j-best .carousel-caption {
   width: 100%;
@@ -184,11 +188,10 @@ body .mouse .arrow {
 }
 /****************正文开始*****************/
 .j-body {
-  height: 600px;
+  height: 700px;
   background: url("../../image/studio/body.jpg") no-repeat;
   background-size: cover;
   position: relative;
-  top: -83px;
   overflow: hidden;
 }
 .j-body .j-body-header .j-image {
@@ -197,7 +200,7 @@ body .mouse .arrow {
   width: 210px;
   height: 270px;
   left: 0;
-  top: 30px;
+  top: 100px;
   border: 1px solid;
   overflow: hidden;
   margin-left: 10px;
@@ -279,7 +282,6 @@ body .mouse .arrow {
 /****************第二部分开始*****************/
 .j-second {
   position: relative;
-  top: -83px;
 }
 .j-second i {
   display: block;
@@ -295,10 +297,9 @@ body .mouse .arrow {
 }
 .j-three {
   width: 100%;
-  height: 600px;
+  height: 700px;
   background: url("../../image/studio/body.jpg") no-repeat;
   position: relative;
-  top: -83px;
 }
 .j-three i {
   display: block;
@@ -377,7 +378,6 @@ body .mouse .arrow {
   background: url("../../image/studio/service_background.jpg");
   color: white;
   position: relative;
-  top: -83px;
 }
 .j-four form {
   position: relative;
@@ -445,11 +445,10 @@ body .mouse .arrow {
 }
 /****************第五部分开始*****************/
 .j-five {
-  height: 600px;
+  height: 700px;
   background: url("../../image/studio/body.jpg") no-repeat;
   padding-top: 40px;
   position: relative;
-  top: -83px;
   width: 100%;
   overflow: hidden;
 }
@@ -526,7 +525,6 @@ body .mouse .arrow {
   width: 100%;
   background: url("../../image/studio/contact.jpg") no-repeat;
   position: relative;
-  top: -83px;
   overflow: hidden;
 }
 .j-footer i {
