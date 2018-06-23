@@ -210,27 +210,4 @@
 
 
     })
-})();
-/****************返回头部****************/
-(function(){
-    $(window).scroll(function(){
-        var top=$(this).scrollTop();
-        if(top>1000){
-            $("#returnHead").show();
-        } else{
-            $("#returnHead").hide();
-        }
-    })
-    $("#returnHeader").click(function(){
-        var timer;
-        timer=setInterval(fnMove,10);
-        function fnMove(){
-            var top= $(window).scrollTop();
-            top-=50;
-            $(window).scrollTop(top);
-            if(top<0){
-                clearInterval(timer);
-            }
-        }
-    })
 })()
