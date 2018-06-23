@@ -390,22 +390,39 @@ div#apps_contact {
   .apps_ipad_tab_detail{
     width: 100%;
     float: left;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-bottom: 75px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
     h3{
       font-size: 18px;
       line-height: 30px;
       margin: 0;
-      font-weight: 400;
       margin-bottom: 10px;
       padding-top: 45px;
     }
-    p{
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 22px;
+    h3:nth-child(3){
+      padding-top: 0;
+    }
+    p,div{
       margin: 0 0 10px;
       color: #999999;
+      height: 135px;
+      overflow: hidden;
+    }
+    div{
+      ul{
+        li{
+          line-height: 30px;
+          a{
+            color: #333333;
+          }
+          a:hover{
+            text-decoration: none;
+          }
+        }
+      }
     }
   }
   .apps_parallax{
@@ -704,15 +721,17 @@ div#apps_contact {
           color: #cccccc;
           border: 1px solid #cccccc;
           border-radius: 50%;
-          margin: 20px 0px;
+          margin: 20px 0;
           font-size: 50px;
           text-align: center;
           display: inline-block;
           -webkit-transition: all 0.5s;
           position: relative;
+          vertical-align: middle;
           img{
             display: block;
             width: 100%;
+            margin: 0 auto;
           }
         }
         .apps_divider{
@@ -737,8 +756,11 @@ div#apps_contact {
       }
       .apps_services:hover{
         .icon{
+          width: 120px;
+          height: 120px;
           border-color: #d90f3a;
           color: #d90f3a;
+          vertical-align: middle;
         }
         .apps_divider{
           span{
@@ -750,7 +772,7 @@ div#apps_contact {
         position: absolute;
         content: "*";
         top: -40px;
-        left: 38px;
+        left: 45px;
         font-size: 50px;
         width: 20px;
         height: 53px;

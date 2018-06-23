@@ -75,3 +75,34 @@ if ($.fn.mixitup) {
     })
 }
 
+//无缝滚动
+
+
+var box = document.getElementsByClassName('apps_ipad_tab_ul')[0];
+var ul = document.getElementById('list')
+box.appendChild(ul.cloneNode(true))
+
+console.log(box);
+console.log(ul);
+
+
+var num = 0 ,timer;
+function move() {
+    num++
+    if(box.scrollTop<ul.offsetHeight){
+        box.scrollTop++
+    }else{
+        box.scrollTop = 0
+    }
+}
+timer = window.setInterval(move,20);
+box.onmouseover = function () {
+    clearInterval(timer)
+}
+box.onmouseout = function () {
+    clearInterval(timer)
+    timer = window.setInterval(move,20);
+}
+
+
+
