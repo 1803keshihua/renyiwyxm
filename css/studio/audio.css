@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 li {
   list-style: none;
@@ -153,6 +154,10 @@ body .mouse .arrow {
   position: relative;
   padding-left: 400px;
   z-index: 1000;
+}
+.my-j-jumbotron .j-best .carousel-caption .ring a {
+  color: white;
+  text-decoration: none;
 }
 .my-j-jumbotron .j-best .carousel-caption .ring .j-ring {
   float: left;
