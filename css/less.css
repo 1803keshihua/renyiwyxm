@@ -30,8 +30,9 @@ body {
   margin-right: 50px;
 }
 .head1 .nav ul li a {
-  font-size: 20px;
+  font-size: 16px;
   color: black;
+  font-weight: bold;
   text-decoration: none;
 }
 .head1 .nav ul li a:hover {
@@ -62,8 +63,9 @@ body {
   margin-right: 50px;
 }
 .head2 .nav ul li a {
-  font-size: 20px;
+  font-size: 16px;
   color: black;
+  font-weight: bold;
   text-decoration: none;
 }
 .head2 .nav ul li a:hover {
