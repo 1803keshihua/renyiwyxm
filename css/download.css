@@ -137,7 +137,7 @@ div#apps_contact {
 }
 .apps_slider .apps_logo .slider_logo {
   display: inline-block;
-  padding: 5px 0px;
+  padding: 5px 0;
   color: #fff;
   font-size: 60px;
   font-family: "微软雅黑", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
@@ -182,7 +182,6 @@ div#apps_contact {
   background-color: #fff;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  -ms-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
@@ -233,6 +232,7 @@ div#apps_contact {
   color: black;
   text-decoration: none;
   cursor: pointer;
+  border-radius: 50%;
 }
 .apps_header .apps_menu ul li a:after {
   position: absolute;
@@ -270,7 +270,7 @@ div#apps_contact {
   line-height: 30px;
   background: #FFF;
   margin-top: -9px;
-  padding: 0px 10px;
+  padding: 0 10px;
   display: inline-block;
 }
 #apps_features .apps_page_title {
@@ -438,7 +438,7 @@ div#apps_contact {
 #apps_features .apps_parallax .apps_parallax_bg .slider_in_tab_bg2 {
   width: 100%;
   float: left;
-  margin: 80px 0px;
+  margin: 80px 0;
   position: relative;
 }
 #apps_features .apps_parallax .apps_parallax_bg .slider_in_tab_bg2 img {
@@ -534,7 +534,7 @@ div#apps_contact {
 #apps_portfolio .container .apps_page_title p {
   font-size: 18px;
   text-transform: uppercase;
-  margin: 0px;
+  margin: 0;
   color: #999999;
   font-weight: 400;
 }
@@ -548,7 +548,7 @@ div#apps_contact {
 }
 #apps_portfolio .apps_portfolio_main .container ul {
   list-style: none;
-  padding-left: 0px;
+  padding-left: 0;
   margin-bottom: 50px;
   margin-left: -30px;
 }
@@ -575,7 +575,7 @@ div#apps_contact {
   width: 100%;
   float: left;
   text-align: center;
-  margin: 0px !important;
+  margin: 0 !important;
 }
 #apps_portfolio .apps_portfolio_main .portfolio-grid .portfolio-item {
   width: 20%;
@@ -679,7 +679,7 @@ div#apps_contact {
 #apps_services .container .apps_page_title p {
   font-size: 18px;
   text-transform: uppercase;
-  margin: 0px;
+  margin: 0;
   color: #999999;
   font-weight: 400;
 }
@@ -698,7 +698,7 @@ div#apps_contact {
 #apps_services .container .apps-pulldown-40 .apps_services {
   width: 100%;
   float: left;
-  margin: 30px 0px;
+  margin: 30px 0;
 }
 #apps_services .container .apps-pulldown-40 .apps_services .icon {
   width: 100px;
@@ -768,7 +768,7 @@ div#apps_contact {
 #apps_services .container .apps-pulldown-30 .apps_services_horizontal {
   width: 100%;
   float: left;
-  margin: 30px 0px;
+  margin: 30px 0;
   text-align: left;
 }
 #apps_services .container .apps-pulldown-30 .apps_services_horizontal .icon {
@@ -780,7 +780,7 @@ div#apps_contact {
   color: #cccccc;
   border: 1px solid #cccccc;
   border-radius: 50%;
-  margin: 20px 40px 20px 0px;
+  margin: 20px 40px 20px 0;
   font-size: 40px;
   text-align: center;
   -webkit-transition: all 0.5s;
@@ -841,7 +841,7 @@ div#apps_contact {
   background: url("../image/main_bg.png");
 }
 #apps_services .apps_parallax_testimonials .apps_parallax_testimonials_bg .owl-carousel {
-  margin: 60px 0px;
+  margin: 60px 0;
   position: relative;
   width: 100%;
 }
@@ -898,7 +898,7 @@ div#apps_contact {
 #apps_price_tabel .container .apps_page_title p {
   font-size: 18px;
   text-transform: uppercase;
-  margin: 0px;
+  margin: 0;
   color: #999999;
   font-weight: 400;
 }
@@ -916,16 +916,16 @@ div#apps_contact {
 #apps_price_tabel .container .row .apps_price_table {
   width: 100%;
   float: left;
-  margin: 50px 0px;
+  margin: 50px 0;
   margin-top: 80px;
   text-align: center;
   display: inline-block;
 }
 #apps_price_tabel .container .row .apps_price_table .apps_table {
-  margin-left: 0px;
-  margin-right: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
   border: 1px solid #cccccc;
 }
 #apps_price_tabel .container .row .apps_price_table .apps_table .table_head {
@@ -955,7 +955,7 @@ div#apps_contact {
 #apps_price_tabel .container .row .apps_price_table .apps_table .price_offer li {
   font-size: 16px;
   border-bottom: 1px solid #ccc;
-  padding: 10px 0px;
+  padding: 10px 0;
   color: #999999;
   font-family: "微软雅黑", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
 }
@@ -978,7 +978,7 @@ div#apps_contact {
 }
 #apps_price_tabel .container .row .apps_price_table .apps_table > a {
   width: 100%;
-  padding: 20px 0px;
+  padding: 20px 0;
   border: none;
   background: #d90f3a;
   color: #fff;
@@ -1179,13 +1179,13 @@ div#apps_contact {
 }
 @media (min-width: 993px) and (max-width: 1200px) {
   .apps_template_feature_tab ul li {
-    padding-left: 0px !important;
+    padding-left: 0 !important;
   }
   .apps_template_feature_tab ul li.active {
     padding-right: 30px;
   }
   .apps_template_feature_tab ul li {
-    padding-left: 0px;
+    padding-left: 0;
   }
   .apps_feature_list {
     padding: 100px 10px;
@@ -1205,13 +1205,13 @@ div#apps_contact {
 }
 @media (min-width: 980px) and (max-width: 992px) {
   .apps_template_feature_tab ul {
-    padding: 0px;
+    padding: 0;
   }
   .apps_template_feature_tab ul li.active {
     padding-right: 30px;
   }
   .apps_template_feature_tab ul li {
-    padding-left: 0px;
+    padding-left: 0;
   }
   .apps_feature_list {
     padding: 40px 10px;
@@ -1234,13 +1234,13 @@ div#apps_contact {
 }
 @media (min-width: 768px) and (max-width: 979px) {
   .apps_template_feature_tab ul {
-    padding: 0px;
+    padding: 0;
   }
   .apps_template_feature_tab ul li.active {
     padding-right: 30px;
   }
   .apps_template_feature_tab ul li {
-    padding-left: 0px;
+    padding-left: 0;
   }
   .apps_iphone img.back {
     margin-top: 30px;
@@ -1287,21 +1287,25 @@ div#apps_contact {
   .apps_page_title {
     margin-top: 150px;
   }
+  .apps_header .apps_menu ul {
+    float: none;
+  }
   .apps_header .apps_menu ul li {
     width: 100%;
+    text-align: center;
   }
   .apps_header .apps_menu ul li a {
     width: 100%;
     padding: 10px 15px;
   }
   .apps_header .apps_menu ul li a:after {
-    content: "*";
+    content: "";
     top: 25%;
     left: 0;
     font-size: 23px;
   }
   .apps_header .apps_menu ul li:last-child a:after {
-    content: "*";
+    content: "";
     left: 0;
   }
   #apps_features .apps_template_feature .apps_template_feature_tab {
@@ -1311,10 +1315,10 @@ div#apps_contact {
     width: 100%;
   }
   #apps_features .apps_template_feature .apps_template_feature_tab ul {
-    padding: 0px;
+    padding: 0;
   }
   #apps_features .apps_template_feature .apps_template_feature_tab ul li {
-    padding-left: 0px;
+    padding-left: 0;
     border: 1px solid transparent;
   }
   #apps_features .apps_template_feature .apps_template_feature_tab ul li.active {
@@ -1326,13 +1330,13 @@ div#apps_contact {
     width: auto;
   }
   .apps_template_feature_tab ul li {
-    padding-left: 0px;
+    padding-left: 0;
   }
   .apps_iphone img.back {
     margin-bottom: 30px;
   }
   .apps_ipad_tab_detail {
-    margin-top: 0px;
+    margin-top: 0;
   }
   #apps_features .apps_parallax .apps_parallax_bg .apps_feature_list {
     padding: 40px 10px;
@@ -1374,7 +1378,7 @@ div#apps_contact {
     padding-top: 80%;
   }
   .apps_slider .apps_logo p {
-    padding-left: 0px;
+    padding-left: 0;
     text-align: center;
   }
   .apps_icon ul {
@@ -1394,11 +1398,11 @@ div#apps_contact {
   .apps_template_feature_tab ul {
     float: left;
     width: 100%;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   .apps_template_feature_tab ul li {
     float: left;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     width: 33.333333333333333333%;
   }
   .apps_template_feature_tab ul li a {
@@ -1417,7 +1421,7 @@ div#apps_contact {
     display: none;
   }
   .apps_template_feature_tab ul li.active {
-    padding-right: 0px;
+    padding-right: 0;
   }
   .apps_template_feature {
     min-height: 500px;
@@ -1432,7 +1436,7 @@ div#apps_contact {
     width: 100%;
   }
   .slider_in_tab_bg2 {
-    margin: 20px 0px;
+    margin: 20px 0;
   }
   .Newfooter .Newfooter_top .Newfooter_top_main .Newfooter_top_main_center {
     padding-left: 15px;
@@ -1459,7 +1463,7 @@ div#apps_contact {
     margin-bottom: 30px;
   }
   .apps_feature_list {
-    padding: 0px 10px 40px 10px;
+    padding: 0 10px 40px 10px;
   }
   .slider_in_tab2 {
     padding: 18px 35px;
@@ -1477,7 +1481,7 @@ div#apps_contact {
     padding-top: 60%;
   }
   .apps_logo p {
-    padding-left: 0px;
+    padding-left: 0;
     text-align: center;
   }
   .apps_icon ul {
@@ -1487,7 +1491,7 @@ div#apps_contact {
     top: 80px;
   }
   .apps_icon ul li {
-    margin-right: 0px;
+    margin-right: 0;
   }
   .apps_icon ul li a {
     width: 50px;
@@ -1498,7 +1502,7 @@ div#apps_contact {
     left: 15px;
   }
   .apps_social ul li {
-    margin: 0px 5px;
+    margin: 0 5px;
   }
   .apps_social ul li a {
     width: 30px;
