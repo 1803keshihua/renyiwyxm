@@ -11,13 +11,13 @@ $(window).scroll(function(){
         if ($(this).scrollTop()>=190) {
             setTimeout(function () {
                 $('#ctj-con-left').addClass('slideInUp');
-            },0)
+            },0);
             setTimeout(function () {
                 $('#ctj-con-center').addClass('slideInUp');
-            },200)
+            },200);
             setTimeout(function () {
                 $('#ctj-con-right').addClass('slideInUp');
-            },400)
+            },400);
 
         }
 })
@@ -59,19 +59,20 @@ $(function(){
         $li.eq($(this).index()).fadeIn().siblings().fadeOut();
         count = $(this).index();
     });
+    $('.main-pageTwo').hide();
 });
 // 轮播 结束
 //
 // 今日推荐 开始
 $('#ctj-con-left').hover(function () {
-    $(this).css({'box-shadow':'5px 5px 5px #ccc','margin':'85px 0 '})
+    $(this).css({'box-shadow':'5px 5px 5px #ccc','margin':'85px 0 '});
 },function () {
-    $(this).css({'box-shadow':'none','margin':'90px 0'})
+    $(this).css({'box-shadow':'none','margin':'90px 0'});
 })
 $('#ctj-con-center').hover(function () {
-    $(this).css({'box-shadow':'5px 5px 5px #ccc','margin':'85px 30px  '})
+    $(this).css({'box-shadow':'5px 5px 5px #ccc','margin':'85px 30px  '});
 },function () {
-    $(this).css({'box-shadow':'none','margin':'90px 30px'})
+    $(this).css({'box-shadow':'none','margin':'90px 30px'});
 })
 // 今日推荐 结束
 //
@@ -91,14 +92,18 @@ e.preventDefault();
         top:0,
         left:0,
         zIndex:'999'
-    })
+    });
 
 })
 $('#cmain-wrap-con').mouseleave(function () {
         $('.fuceng').remove();
     }
 )
-
+$('#cmain-wrap-setPage').find('li').click(function (e) {
+    e.preventDefault();
+    $('.main-pageOne').toggle();
+    $('.main-pageTwo').toggle();
+});
 // 设计师介绍 结束
 
 // 底部 开始

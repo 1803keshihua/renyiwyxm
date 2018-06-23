@@ -233,6 +233,16 @@ body {
 #cmain-wrap #cmain-wrap-con {
   width: 90%;
   margin: 0 auto;
+}
+#cmain-wrap #cmain-wrap-con .main-pageTwo {
+  width: 100%;
+  display: flex;
+  flex-flow: row  wrap;
+  justify-content: space-around;
+  position: relative;
+}
+#cmain-wrap #cmain-wrap-con .main-pageOne {
+  width: 100%;
   display: flex;
   flex-flow: row  wrap;
   justify-content: space-around;

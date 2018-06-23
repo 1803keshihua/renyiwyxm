@@ -286,6 +286,9 @@ body {
 /*更多 开始*/
 .bdshare_popup_box {
   width: 226px;
+}
+.bdshare_popup_box .adisplay {
+  width: 226px;
   top: 220px;
   left: 588px;
   position: absolute;
@@ -295,8 +298,19 @@ body {
   background: #f6f6f6;
   border: solid 1px #e9e9e9;
 }
-.bdshare_dialog_top,
-.bdshare_popup_top {
+.bdshare_popup_box .bdisplay {
+  width: 226px;
+  display: none;
+  z-index: 9998;
+  text-align: left;
+  background: #f6f6f6;
+  border: solid 1px #e9e9e9;
+}
+.bdshare_popup_box .bdshare_popup_top span {
+  float: right;
+}
+.bdshare_popup_box .bdshare_dialog_top,
+.bdshare_popup_box .bdshare_popup_top {
   height: 28px;
   color: #626262;
   overflow: hidden;
@@ -305,14 +319,14 @@ body {
   line-height: 28px;
   padding: 0 5px;
 }
-.bdshare_popup_list {
+.bdshare_popup_box .bdshare_popup_list {
   margin: 0;
   padding: 5px 0;
   background: #fff;
   overflow: auto;
   overflow-x: hidden;
 }
-.bdshare_popup_list li {
+.bdshare_popup_box .bdshare_popup_list li {
   float: left;
   width: 100px;
   padding: 2px;
@@ -322,16 +336,16 @@ body {
   overflow: hidden;
   list-style: none;
 }
-.bdshare_popup_bottom {
+.bdshare_popup_box .bdshare_popup_bottom {
   clear: both;
   height: 30px;
   font-size: 12px;
   text-align: right;
   padding: 0 10px;
 }
-.bdshare_dialog_list a,
-.bdshare_popup_list a,
-.bdshare_popup_bottom a {
+.bdshare_popup_box .bdshare_dialog_list a,
+.bdshare_popup_box .bdshare_popup_list a,
+.bdshare_popup_box .bdshare_popup_bottom a {
   color: #565656;
   display: block;
   background-image: url('../image/cmc/icons_1_16.png');
@@ -343,52 +357,52 @@ body {
   border-color: #ffffff;
   border-image: initial;
 }
-.popup_mshare {
+.bdshare_popup_box .popup_mshare {
   background-position: 4px -2439px;
 }
-.popup_qzone {
+.bdshare_popup_box .popup_qzone {
   background-position: 4px -47px;
 }
-.popup_tsina {
+.bdshare_popup_box .popup_tsina {
   background-position: 4px -99px;
 }
-.popup_bdysc {
+.bdshare_popup_box .popup_bdysc {
   background-position: 4px -3063px;
 }
-.popup_weixin {
+.bdshare_popup_box .popup_weixin {
   background-position: 4px -1607px;
 }
-.popup_renren {
+.bdshare_popup_box .popup_renren {
   background-position: 4px -203px;
 }
-.popup_tqq {
+.bdshare_popup_box .popup_tqq {
   background-position: 4px -255px;
 }
-.popup_bdxc {
+.bdshare_popup_box .popup_bdxc {
   background-position: 4px -2543px;
 }
-.popup_kaixin001 {
+.bdshare_popup_box .popup_kaixin001 {
   background-position: 4px -307px;
 }
-.popup_tqf {
+.bdshare_popup_box .popup_tqf {
   background-position: 4px -359px;
 }
-.popup_tieba {
+.bdshare_popup_box .popup_tieba {
   background-position: 4px -723px;
 }
-.popup_douban {
+.bdshare_popup_box .popup_douban {
   background-position: 4px -463px;
 }
-.popup_bdhome {
+.bdshare_popup_box .popup_bdhome {
   background-position: 4px -151px;
 }
-.popup_sqq {
+.bdshare_popup_box .popup_sqq {
   background-position: 4px -2647px;
 }
-.popup_thx {
+.bdshare_popup_box .popup_thx {
   background-position: 4px -2491px;
 }
-.popup_ibaidu {
+.bdshare_popup_box .popup_ibaidu {
   background-position: 4px -3115px;
 }
 /*更多 结束*/

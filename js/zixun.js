@@ -21,8 +21,8 @@ $('.adBtn').click(function () {
 //     更多 开始
     $('.bds_more').hover(function () {
         // $('.bdshare_popup_box').animate({opacity:1},1000);
-        $('.bdshare_popup_box').show();
-        $('.bdshare_popup_box').hover(function () {
+        $('.adisplay').show();
+        $('.adisplay').hover(function () {
             // $(this).animate({opacity:1},0);
             $(this).show();
         },function () {
@@ -33,12 +33,16 @@ $('.adBtn').click(function () {
             $(this).css('background','#eee');
         },function () {
             $('.bdshare_popup_list').find('li').css('background','#fff');
-        })
+        });
     },function () {
         // $('.bdshare_popup_box').animate({opacity:0},0);
-        $('.bdshare_popup_box').hide();
+        $('.adisplay').hide();
     });
-
-
+    $('.bds_more').click(function () {
+        $('.bdisplay').show().css({'position':'fixed','left':'45%','top':'35%'});
+    });
+$('.bdshare_popup_top').find('span').click(function () {
+    $('.bdisplay').hide();
+})
 
 //     更多 结束
