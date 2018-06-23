@@ -1335,7 +1335,7 @@
                     <li>北京站</li>
                     <li class="li1">上海站</li>
                     <li>广州站</li>
-                    <li class="li1 li2"><a href="">立即咨询</a></li>
+                    <li class="li1 li2"><a href="home_page.html">立即咨询</a></li>
                 </ul>
             </div>
             <div class="indexCustom_nr_left indexCustom_nr_center">
@@ -1348,7 +1348,7 @@
                     <li>职位发布</li>
                     <li class="li1">品牌专题</li>
                     <li>专业服务</li>
-                    <li class="li1 li2"><a href="">立即咨询</a></li>
+                    <li class="li1 li2"><a href="home_page.html">立即咨询</a></li>
                 </ul>
             </div>
             <div class="indexCustom_nr_left">
@@ -1361,7 +1361,7 @@
                     <li>高端人才</li>
                     <li class="li1">精准推荐</li>
                     <li>猎头沟通</li>
-                    <li class="li1 li2"><a href="">立即咨询</a></li>
+                    <li class="li1 li2"><a href="home_page.html">立即咨询</a></li>
                 </ul>
             </div>
         </div>
@@ -1604,10 +1604,12 @@
     });
     //鼠标移入移出事件
     $(".NewFindInform_main_nrOneWrap").mouseenter(function(){
-        $(this).css("boxShadow","5px 5px 10px #dcdcdc")
+        $(this).css("boxShadow","5px 5px 10px #dcdcdc");
+        $(this).css("marginBottom","5px");
     });
     $(".NewFindInform_main_nrOneWrap").mouseleave(function(){
-        $(this).css("boxShadow","")
+        $(this).css("boxShadow","");
+        $(this).css("marginBottom","");
     });
     /*个性*/
     $(".indexCustom_nr_left").mouseenter(function(){
