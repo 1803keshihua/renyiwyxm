@@ -17,6 +17,9 @@ li {
 body {
   width: 100%;
 }
+body a:focus {
+  outline: none;
+}
 body .j-five-title {
   text-align: center;
   color: black;
@@ -94,11 +97,14 @@ body .mouse .arrow {
   position: absolute;
   z-index: 9999;
   width: 100%;
-  left: 48%;
+  left: 49%;
   margin-left: -650px;
   background: transparent;
   border: none;
   overflow: hidden;
+}
+.j-nav .navbar-header {
+  padding-top: 30px;
 }
 .j-nav .j-navbar-nav {
   padding-top: 30px;
@@ -123,13 +129,14 @@ body .mouse .arrow {
 .j-nav .navbar-collapse ul li a:hover,
 .j-nav .navbar-collapse ul li a.current {
   color: #cc1a2a;
+  border: none;
 }
 .my-j-jumbotron {
   padding-top: 0;
   padding-bottom: 0;
   width: 100%;
   position: relative;
-  height: 650px;
+  height: 644px;
   overflow: hidden;
   margin-bottom: 0;
 }

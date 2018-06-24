@@ -30,6 +30,7 @@ $(window).scroll(function(e){
          $(".j-nav").css("position","fixed");
          $(".j-nav-popup").css("display","none");
          $(".nav-popup-bg").css("display","none");
+         $("a").css("border","none");
          flag=0;
          e.preventDefault();
          var index=$(this).index();
