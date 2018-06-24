@@ -30,7 +30,7 @@
   position: relative;
   line-height: 100px;
 }
-.nav:first-child > span > img {
+.nav:first-child > span > a > img {
   float: left;
   margin-top: 35px;
 }
