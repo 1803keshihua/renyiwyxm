@@ -207,7 +207,5 @@
                 clearInterval(timer);
             }
         }
-
-
     })
-})()
+})();
